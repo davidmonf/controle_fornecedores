@@ -1,7 +1,5 @@
-<?php require_once("html/htmlStart.php"); ?>
+<?php require("html/htmlStart.php"); ?>
 
-<script src="src/js/jquery-3.2.1.min.js"></script>
-<script src="src/js/bootstrap.min.js"></script>
 
 <div class="row">
 	<div class="form-group col-md-2">
@@ -64,8 +62,8 @@
 		<label for="digit"
 		       class="form-control-label">Digit. Rede: </label>
 		<select class="form-control"
-		       id="digit"
-		       name="">
+		        id="digit"
+		        name="">
 			<option>Sim</option>
 			<option>Não</option>
 		</select><br>
@@ -155,7 +153,7 @@
 	
 	<div class="form-group col-md-1">
 		<label for="vl_pb"
-		       class="form-control-label">Unit.PB: </label>
+		       class="form-control-label">Valor Unit.PB: </label>
 		<input type="text"
 		       class="form-control"
 		       id="vl_pb"
@@ -164,7 +162,7 @@
 	
 	<div class="form-group col-md-1">
 		<label for="vl_color"
-		       class="form-control-label">Unit.Color: </label>
+		       class="form-control-label">Valor Unit.Color: </label>
 		<input type="text"
 		       class="form-control"
 		       id="vl_color"
@@ -303,6 +301,7 @@
 		<button id="limpar" type="submit" class="btn btn-primary">Limpar</button>
 	</div>
 </div>
-<?php require_once("html/htmlEnd.php"); ?>
 
 
+
+<?php require("html/htmlEnd.php"); ?>

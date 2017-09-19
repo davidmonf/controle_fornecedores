@@ -9,10 +9,10 @@
 <section id="container">
 	
 	<!--TOP MENU-->
-	<?php require_once("../html/topMenu.php"); ?>
+	<?php require_once("html/topMenu.php"); ?>
 	<!--/TOP MENU-->
 	
 
 	<!--LEFT SIDE MENU-->
-	<?php require_once("../html/leftSideMenu.php"); ?>
+	<?php require_once("html/leftSideMenu.php"); ?>
 	<!--/LEFT SIDE MENU-->
