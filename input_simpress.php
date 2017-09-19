@@ -258,6 +258,8 @@
 		<input type="text"
 		       class="form-control"
 		       id="uf"
+		       maxlength="2"
+		       minlength="2"
 		       name=""><br>
 	</div>
 	
@@ -303,6 +305,18 @@
 		<button id="limpar" type="submit" class="btn btn-primary">Limpar</button>
 	</div>
 </div>
+
+<script type="text/javascript">
+	jQuery(function($){
+		$("#instalacao").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+		$("#desinstalacao").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+		$("#telefone").mask("(99) 9999-9999");
+		$("#ip").mask("999.999.999.999");
+		$("#cep").mask("99999-99");
+		$("#cnpj").mask("99.999.999/9999-99");
+	});
+</script>
+
 <?php require_once("html/htmlEnd.php"); ?>
 
 
