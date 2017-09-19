@@ -58,7 +58,7 @@
     <!--external css-->
 	<link rel="stylesheet"
 	      type="text/css"
-	      href="src/css/main.css">
+	      href="../src/css/main.css">
 
     <!-- Custom styles for this template -->
 
