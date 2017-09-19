@@ -1,7 +1,7 @@
-<?php require_once("html/htmlStart.php"); ?>
+<?php require_once("../html/htmlStart.php"); ?>
 
-<script src="src/js/jquery-3.2.1.min.js"></script>
-<script src="src/js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <div class="row">
 	<div class="form-group col-md-2">
@@ -200,7 +200,7 @@
 	
 	<div class="form-group col-md-1">
 		<label for="cr"
-		       class="form-control-label">Código CR: </label>
+		       class="form-control-label">CR: </label>
 		<input type="text"
 		       class="form-control"
 		       id="cr"
@@ -317,6 +317,6 @@
 	});
 </script>
 
-<?php require_once("html/htmlEnd.php"); ?>
+<?php require_once("../html/htmlEnd.php"); ?>
 
 
