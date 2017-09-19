@@ -28,7 +28,6 @@
 	height: 17px;
 	width: 17px;
 	display: inline-block;
-	/*background: url("../assets/img/nav-expand.png") no-repeat top;*/
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -38,7 +37,6 @@
 }
 
 .active .dcjq-icon {
-	/*background: url("../img/nav-expand.png") no-repeat bottom;*/
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -108,7 +106,6 @@ ul.sidebar-menu li ul.sub li.active a {
 }
 
 ul.sidebar-menu li {
-	/*line-height: 20px !important;*/
 	margin-bottom: 5px;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -467,7 +464,6 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .log-arrow-up {
-	/*background: url("../img/arrow-up.png") no-repeat;*/
 	width: 20px;
 	height: 11px;
 	position: absolute;

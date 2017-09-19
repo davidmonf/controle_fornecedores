@@ -14,10 +14,6 @@
 <!--http://digitalbush.com/projects/masked-input-plugin-->
 <script src="https://cdn.jsdelivr.net/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 
-<!--4º IMPORT-->
-<!--http://digitalbush.com/projects/masked-input-plugin-->
-<script src="../src/js/main.js"></script>
-
 
 
 
