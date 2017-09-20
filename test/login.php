@@ -6,23 +6,31 @@
 <!--/HEAD-->
 
 <body>
-	<h1>Controle de Fornecedores</h1>
-	<div id="login_form">
+	<h3 id="titulologin">Controle de Fornecedores</h3>
+	
+	<div class="imgcontainer">
+		<img src="../src/images/presentation.png" alt="Controle de Fornecedores" class="logo">
+	</div>
+	
+	<div id="loginform" class="row">
+		<div class="col-md-4 col-md-offset-4">
 		<label for="login"
 		       class="form-control-label">Usuário: </label>
 		<input type="text"
 		       class="form-control"
 		       id="login"
-		       name=""><br>
+		       name="usuario"><br>
 		<label for="pwd"
 		       class="form-control-label">Senha: </label>
-		<input type="text"
+		<input type="password"
 		       class="form-control"
 		       id="pwd"
-		       name=""><br>
+		       name="pwd"><br>
+		</div>
 		<div class="col-md-12">
 			<button id="entrar" type="submit" class="btn btn-primary">Entrar</button>
-		</div>
+	</div>
 </div>
 </body>
 </html>
+
