@@ -12,7 +12,7 @@
 					     width="60">
 				</a>
 			</p>
-			<h5 class="centered">Usuário Teste</h5>
+			<h5 class="text-center">Usuário Teste</h5>
 			
 			<li class="mt">
 				<a>
@@ -22,26 +22,18 @@
 			</li>
 			
 			<li class="sub-menu">
-				<a>
+				<a href="#" >
 					<i class="fa fa-desktop"></i>
-					<span>Cadastros</span>
+					<span>CADASTRO</span>
 				</a>
 				<ul class="sub">
-					<li>
-						<a
-						   href="#">Pessoa Fisica
-						</a>
-					</li>
-					<li>
-						<a id="linkPessoaUsuario"
-						   href="#">Cadastro de Usuario
-						</a>
-					</li>
-					<li>
-					
-					</li>
+					<li><a  href="#">General</a></li>
+					<li><a  href="#">Buttons</a></li>
+					<li><a  href="#">Panels</a></li>
 				</ul>
 			</li>
+			
+			
 		
 		</ul>
 		<!-- sidebar menu end-->

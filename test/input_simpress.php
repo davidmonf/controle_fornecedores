@@ -3,7 +3,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-
+<form method="POST" action="input_simpress.php" enctype="multipart/form-data" onSubmit="return()">
 <div class="row">
 	<div class="form-group col-md-2">
 		<label for="serie"
@@ -42,6 +42,15 @@
 	</div>
 	
 	<div class="form-group col-md-2">
+		<label for="mask"
+		       class="form-control-label">Endereço MAC: </label>
+		<input type="text"
+		       class="form-control"
+		       id="mac"
+		       name=""><br>
+	</div>
+	
+	<div class="form-group col-md-2">
 		<label for="fixo"
 		       class="form-control-label">IP Fixo: </label>
 		<select class="form-control"
@@ -61,7 +70,7 @@
 		       name=""><br>
 	</div>
 	
-	<div class="form-group col-md-2">
+	<div class="form-group col-md-2"> <!-- Digitalização para rede -->
 		<label for="digit"
 		       class="form-control-label">Digit. Rede: </label>
 		<select class="form-control"
@@ -121,7 +130,7 @@
 		</select><br>
 	</div>
 	
-	<div class="form-group col-md-2">
+	<div class="form-group col-md-2"> <!-- Proativo conferido na Simpress -->
 		<label for="proconf"
 		       class="form-control-label">Pro Conf: </label>
 		<select class="form-control"
@@ -154,7 +163,7 @@
 		</select><br>
 	</div>
 	
-	<div class="form-group col-md-1">
+	<div class="form-group col-md-1"> <!-- Valor impressão P&B -->
 		<label for="vl_pb"
 		       class="form-control-label">Unit.PB: </label>
 		<input type="text"
@@ -163,7 +172,7 @@
 		       name=""><br>
 	</div>
 	
-	<div class="form-group col-md-1">
+	<div class="form-group col-md-1"> <!-- Valor impressão P&B -->
 		<label for="vl_color"
 		       class="form-control-label">Unit.Color: </label>
 		<input type="text"
@@ -273,7 +282,7 @@
 		       name=""><br>
 	</div>
 	
-	<div class="form-group col-md-2">
+	<div class="form-group col-md-2"> <!-- Local interno onde a impressora está -->
 		<label for="interno"
 		       class="form-control-label">Local. Interna: </label>
 		<input type="text"
@@ -306,7 +315,7 @@
 		<button id="limpar" type="submit" class="btn btn-primary">Limpar</button>
 	</div>
 </div>
-
+</form>
 <script type="text/javascript">
 	jQuery(function($){
 		$("#instalacao").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
@@ -316,8 +325,55 @@
 		$("#cep").mask("99999-99");
 		$("#cnpj").mask("99.999.999/9999-99");
 	});
-</script>
 
+	$.getScript( "../src/js/main.js" )
+		.done(function( script, textStatus ) {
+			console.log( textStatus );
+		})
+		.fail(function( jqxhr, settings, exception ) {
+			$( "div.log" ).text( "Triggered ajaxError handler." );
+		});
+
+</script>
+<?php
+	if (isset($_POST['serie'])) {
+		include("conexao.php");
+		$serie = $_POST['serie'];
+		$nome = $_POST['nome'];
+		$ip = $_POST['ip'];
+		$mask = $_POST['mask'];
+		$mac = $_POST['mask'];
+		$fixo = $_POST['fixo']; /*(dropdown - sim/nao)*/
+		$server = $_POST['server'];
+		$digit = $_POST['digit']; /*(dropdown - sim/nao)*/
+		$nuvem = $_POST['nuvem']; /*(dropdown - sim/nao)*/
+		$compart = $_POST['compart'];
+		$item_contrato = $_POST['item_contrato'];
+		$modelo = $_POST['modelo'];
+		$proativo = $_POST['proativo']; /*(dropdown - sim/nao)*/
+		$proconf = $_POST['proconf']; /*(dropdown - sim/nao)*/
+		$color = $_POST['color']; /*(dropdown - sim/nao)*/
+		$scan = $_POST['scan']; /*(dropdown - sim/nao)*/
+		$vl_pb = $_POST['vl_pb'];
+		$vl_color = $_POST['vl_color'];
+		$instalacao = $_POST['instalacao'];
+		$desinstalacao = $_POST['desinstalacao'];
+		$valor = $_POST['valor'];
+		$cr = $_POST['cr'];
+		$descricao_cr = $_POST['descricao_cr'];
+		$superint = $_POST['superint'];
+		$gerencia = $_POST['gerencia'];
+		$endereco = $_POST['endereco'];
+		$cidade = $_POST['cidade'];
+		$uf = $_POST['uf'];
+		$cep = $_POST['cep'];
+		$interno = $_POST['interno'];
+		$telefone = $_POST['telefone'];
+		$cnpj = $_POST['cnpj'];
+		
+		/* $sql = "INSERT INTO impressoras ()" */
+	}
+?>
 <?php require_once("../html/htmlEnd.php"); ?>
 
 
