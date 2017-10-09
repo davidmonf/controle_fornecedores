@@ -12,26 +12,30 @@
 					     width="60">
 				</a>
 			</p>
-			<h5 class="text-center">Usuário Teste</h5>
+			<h5 class="text-center">Usuário <?php echo $_SESSION['username'] ?></h5>
 			
 			<li class="mt">
-				<a>
+				<a href="../test/dashboard.php">
 					<i class="fa fa-dashboard"></i>
 					<span>Dashboard</span>
 				</a>
+				<a href="../test/input_simpress.php">
+					<i class="fa fa-print"></i>
+					<span>Simpress</span>
+				</a>
+				<a href="../test/input_as.php">
+					<i class="fa fa-desktop"></i>
+					<span>AS</span>
+				</a>
+				<a href="../test/input_assistencia.php">
+					<i class="fa fa-wrench"></i>
+					<span>Assistência Técnica</span>
+				</a>
 			</li>
 			
-			<li class="sub-menu">
-				<a href="#" >
-					<i class="fa fa-desktop"></i>
-					<span>CADASTRO</span>
-				</a>
-				<ul class="sub">
-					<li><a  href="#">General</a></li>
-					<li><a  href="#">Buttons</a></li>
-					<li><a  href="#">Panels</a></li>
-				</ul>
-			</li>
+			
+			
+			
 			
 			
 		

@@ -54,8 +54,8 @@
 		<ul class="nav pull-right top-menu">
 			<li>
 				<a class="logout"
-				   href="#">Logout
-				</a>
+				   href=".\logout.php">Logout
+				</a>..
 			</li>
 		</ul>
 	</div>

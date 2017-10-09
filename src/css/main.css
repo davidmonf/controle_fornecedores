@@ -29,7 +29,7 @@ body{
 	width: 210px;
 	height: 100%;
 	position: fixed;
-	background: #424a5d;
+	background: #424A5D;
 }
 
 #sidebar h5 {
@@ -67,6 +67,10 @@ body{
 
 #entrar{
 	margin-bottom: 20px;
+}
+
+#erro{
+	color: red;
 }
 
 /*LEFT NAVIGATION ICON*/
@@ -227,7 +231,7 @@ ul.sidebar-menu li a.active i {
 }
 
 .black-bg {
-	background: #003E7D;
+	background: #36384C;
 	border-bottom: 1px solid black;
 }
 

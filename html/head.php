@@ -60,13 +60,38 @@
 	      type="text/css"
 	      href="../src/css/main.css">
 
-    <!-- Custom styles for this template -->
-
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!--SCRIPTS>
+    <!--INICIO DO JAVA SCRIPT EXTERNO-->
+
+    <!--1º IMPORT-->
+    <!--http://jqueryui.com/-->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!--2º IMPORT-->
+    <!--http://getbootstrap.com/-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	        crossorigin="anonymous"></script>
+
+    <!--3º IMPORT-->
+    <!--http://digitalbush.com/projects/masked-input-plugin-->
+	<script src="https://cdn.jsdelivr.net/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+
+    <!--4º IMPORT-->
+    <!--http://www.chartjs.org/-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+	<script src="../src/js/chart-utils.js"></script>
+
+    <!--FIM DO JAVA SCRIPT EXTERNO-->
+	
+	
+	
 </head>
 <!--FIM DO HEAD DA APLICAÇÃO PHP-->
