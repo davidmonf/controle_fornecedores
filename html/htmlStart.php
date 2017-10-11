@@ -2,19 +2,19 @@
 <html lang="pt-BR">
 
 <!--HEAD-->
-<?php require_once("../html/head.php"); ?>
+<?php require("../html/head.php"); ?>
 <!--/HEAD-->
 
 <body>
 <section id="container">
 	
 	<!--TOP MENU-->
-	<?php require_once("../html/topMenu.php"); ?>
+	<?php require("../html/topMenu.php"); ?>
 	<!--/TOP MENU-->
 	
 
 	<!--LEFT SIDE MENU-->
-	<?php require_once("../html/leftSideMenu.php"); ?>
+	<?php require("../html/leftSideMenu.php"); ?>
 	<!--/LEFT SIDE MENU-->
 	
 	<section id="main-content">

@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 						if($pwd == $senha){
 							session_start();
 							$_SESSION['username'] = $usuario;
-							header("location: input_simpress.php");
+							header("location: dashboard.php");
 						} else{
 							$pwd_err = 'Senha incorreta.';
 							$erro = $pwd_err;
@@ -82,7 +82,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	<div class="imgcontainer">
 		<img src="../src/images/presentation.png" alt="Controle de Fornecedores" class="logo">
 	</div>
-	<form method="post">
+	<form method="post" action="login.php">
 	<div id="loginform" class="row">
 		<div class="col-md-4 col-md-offset-4">
 		<label for="login"

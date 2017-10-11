@@ -15,5 +15,15 @@
     <orderEntry type="library" name="respond" level="application" />
     <orderEntry type="library" name="Chart" level="application" />
     <orderEntry type="library" name="Chart.bundle" level="application" />
+    <orderEntry type="module-library">
+      <library name="PHP" type="php">
+        <CLASSES>
+          <root url="file://C:/xampp/php" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://C:/xampp/php" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

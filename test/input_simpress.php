@@ -329,7 +329,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 	</div>
 	<div class="col-md-12">
 		<button id="incluir" type="submit" class="btn btn-primary">Incluir</button>
-		<button id="buscar" type="submit" class="btn btn-primary">Buscar</button>
+		<!--<button id="buscar" type="submit" class="btn btn-primary">Buscar</button>-->
 		<button id="limpar" type="submit" class="btn btn-primary">Limpar</button>
 	</div>
 </div>
