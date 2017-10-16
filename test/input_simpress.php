@@ -339,13 +339,13 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 </form>
 <br>
 <br>
-<button id="anterior" type="button" class="btn btn-default">Registro Anterior</button>
-<button id="proximo" type="button" class="btn btn-default">Próximo Registro</button>
+<!--<button id="anterior" type="button" class="btn btn-default">Registro Anterior</button>-->
+<!--<button id="proximo" type="button" class="btn btn-default">Próximo Registro</button>-->
 
 <script type="text/javascript">
 	jQuery(function($){
-		$("#instalacao").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
-		$("#desinstalacao").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+		$("#instalacao").mask("99/99/9999");
+		$("#desinstalacao").mask("99/99/9999");
 		$("#telefone").mask("(99) 9999-9999");
 		$("#ip").mask("999.999.999.999");
 		$("#mask").mask("999.999.999.999");
@@ -417,5 +417,3 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 	}
 ?>
 <?php require_once("../html/htmlEnd.php"); ?>
-
-

@@ -34,7 +34,7 @@
 				<ul class="dropdown-menu extended inbox">
 					<div class="notify-arrow notify-arrow-green"></div>
 					<li>
-						<p class="green">Você tem 1 mesagens</p>
+						<p class="green">Você tem 1 mensagem</p>
 					</li>
 					<li>
 						<a href="#">

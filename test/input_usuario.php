@@ -19,45 +19,45 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	if(empty($usuario)){
 		
 		$erro = "Digite um usuário.";
-		$cod_erro = 1;
+		$error = true;
 		//echo $erro;
 	} else if(strlen($usuario) < 5){
 	
 		$erro = "Usuario deve ter pelo menos 5 caracteres.";
-		$cod_erro = 1;
+		$error = true;
 		//echo $erro;
 	}
 	
 	if(empty($pwd)){
 		
 		$erro = "Digite uma senha.";
-		$cod_erro = 1;
+		$error = true;
 	} else if(strlen($pwd) < 6){
 		
 		$erro = "Senha deve ter pelo menos 6 caracteres.";
-		$cod_erro = 1;
+		$error = true;
 	}
 	
 	if(empty($confirma_pwd)){
 		
 		$erro = "Confirme a senha.";
-		$cod_erro = 1;
+		$error = true;
 	} else if($confirma_pwd != $pwd){
 		
 		$erro = "Senhas digitadas não conferem.";
-		$cod_erro = 1;
+		$error = true;
 	}
 	
 	if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
 		$erro = "Digite um endereço de email válido.";
-		$cod_erro = 1;
+		$error = true;
 	}
 	
 	//$pwd = hash('sha256', $pwd);
 
-	if($erro == 0){
+	if(!$error){
 		
-		$sql = "INSERT INTO usuarios(ID, usuario, pwd) VALUES (NULL, '$usuario','$pwd')";
+		$sql = "INSERT INTO usuarios(ID, usuario, pwd, email) VALUES (NULL, '$usuario','$pwd','$email')";
 		$stmt = mysqli_prepare($conecta_banco, $sql) or die(mysqli_error($conecta_banco));
 		$res = mysql_query($sql);
 		

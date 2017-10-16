@@ -38,17 +38,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 	</div>
 	<div class="col-md-2 col-sm-2 box0">
 		<div class="box1">
-			<span class="fa fa-wrench fa-3x"></span>
-			<h3>23</h3>
+			<span class="fa fa-pencil-square-o fa-3x"></span>
+			<h3>16</h3>
 		</div>
-		<p>Equipamentos parados para manutenção</p>
+		<p>Pedidos AS em Aberto</p>
 	</div>
 	<div class="col-md-2 col-sm-2 box0">
 		<div class="box1">
-			<span class="fa fa-wrench fa-3x"></span>
-			<h3>23</h3>
+			<span class="fa fa-usd fa-3x"></span>
+			<h3>R$50.000,00</h3>
 		</div>
-		<p>Equipamentos parados para manutenção</p>
+		<p>Custo Total de Aluguel</p>
 	</div>
 
 </div><!-- /row mt -->
@@ -183,11 +183,11 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 <div id="canvas-holder" style="width:100%">
 	<canvas id="chart-area" />
 </div>
-<button id="randomizeData">Random</button>
-<button id="addDataset">Adicionar Dataset</button>
-<button id="removeDataset">Remover Dataset</button>
-<button id="addData">Adicionar Data</button>
-<button id="removeData">Remover Data</button>
+<button id="randomizeData" class="btn btn-default">Random</button>
+<button id="addDataset" class="btn btn-default">Adicionar Dataset</button>
+<button id="removeDataset" class="btn btn-default">Remover Dataset</button>
+<button id="addData" class="btn btn-default">Adicionar Data</button>
+<button id="removeData" class="btn btn-default">Remover Data</button>
 <script>
 	var randomScalingFactor = function() {
 		return Math.round(Math.random() * 100);
@@ -213,11 +213,11 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 				label: 'Dataset 1'
 			}],
 			labels: [
-				"Red",
-				"Orange",
-				"Yellow",
-				"Green",
-				"Blue"
+				"Norte",
+				"Nordeste",
+				"Nordeste-Sul",
+				"Centro-Oeste",
+				"São Paulo"
 			]
 		},
 		options: {
@@ -227,7 +227,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			},
 			title: {
 				display: true,
-				text: 'Chart.js Doughnut Chart'
+				text: 'Equipamentos por Gerência Regional'
 			},
 			animation: {
 				animateScale: true,

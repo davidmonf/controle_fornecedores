@@ -19,10 +19,6 @@
 					<i class="fa fa-dashboard"></i>
 					<span>Dashboard</span>
 				</a>
-				<a href="../test/input_simpress.php">
-					<i class="fa fa-print"></i>
-					<span>Simpress</span>
-				</a>
 				<a href="../test/input_as.php">
 					<i class="fa fa-desktop"></i>
 					<span>AS</span>
@@ -31,14 +27,21 @@
 					<i class="fa fa-wrench"></i>
 					<span>Assistência Técnica</span>
 				</a>
+				<li class="panel panel-default" id="dropdown">
+				<a data-toggle="collapse" href="#dropdown-simpress">
+					<i class="fa fa-print"></i>
+					<span>Simpress</span>
+				</a>
+				<div id="dropdown-simpress" class="panel-collpase collapse">
+					<div class="panel-body">
+						<ul class="nav navbar-nav">
+							<li><a href="../test/input_simpress.php">Cadastro</a></li>
+							<li><a href="../test/busca.php">Busca</a></li>
+						</ul>
+					</div>
+				</div>
+				</li>
 			</li>
-			
-			
-			
-			
-			
-			
-		
 		</ul>
 		<!-- sidebar menu end-->
 	</div>
