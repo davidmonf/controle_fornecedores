@@ -5,7 +5,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 	header("location: login.php");
 	exit;
 }
-require_once("../html/htmlStart.php");
+require("../html/htmlStart.php");
 include("conexao.php");
 function DataBR2DB($datapega)
 {
@@ -23,6 +23,7 @@ if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $uploadfile)) {
 }
 echo '<pre>';
 $row = 1;
+$contalinhas=0;
 echo ("<table border='1'>");
 if (($handle = fopen($uploadfile, "r")) !== FALSE) {
 	while (($data = fgetcsv($handle, 50000, ";")) !== FALSE) {
@@ -30,6 +31,7 @@ if (($handle = fopen($uploadfile, "r")) !== FALSE) {
 		$num = count($data);
 		$row++;
 		echo ("<tr>");
+		$contalinhas++;
 		for ($c=0; $c < $num; $c++) {
 			if ((($c == 0) && (strlen($data[$c])<>14))){break;}
 			if ($row > 8) {
@@ -37,6 +39,7 @@ if (($handle = fopen($uploadfile, "r")) !== FALSE) {
 					break;
 				}
 				else {
+					$data[$c] = str_replace('.','',$data[$c]);
 					$data[$c] = rtrim ($data[$c], "'");
 					$data[$c] = trim ($data[$c], "'");
 					if ($data[$c] == ''){$data[$c]='NULL';}
@@ -65,12 +68,21 @@ if (($handle = fopen($uploadfile, "r")) !== FALSE) {
 		$query_final = str_replace('\'NULL\'','NULL',$query_final);
 		/*echo $query_final.'<br/>';*/
 		$result = mysql_query($query_final, $conecta_banco) or print(mysql_error());
-		/*echo ("<script>alert('Dados inseridos com sucesso');</alert>");*/
 		}
 	}
-	
 	echo ("</table>");
 	fclose($handle);
 }
 echo '</pre>';
+/*$query_checa = "SELECT COUNT(SERIE) FROM faturamento_simpress WHERE `COMPETENCIA` = '".$_POST['compet']."'";
+$result_checa = mysql_query($query_checa, $conecta_banco) or print(mysql_error());
+while ($result_checado = mysql_fetch_assoc($result_checa)){
+	$inserido = $result_checado['COUNT(SERIE)'];
+}
+echo ($inserido);
+echo ($contalinhas);
+if ($inserido == $contalinhas) {
+	echo("<script>alert('Dados inseridos com sucesso.');</script>");
+	echo ("importado 100%");
+}*/
 require("../html/htmlEnd.php"); ?>

@@ -72,7 +72,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 
-<?php require_once("../html/head.php"); ?>
+<?php require("../html/head.php"); ?>
 
 <body>
 <h3 id="titulologin">Cadastro de Usuário</h3>
@@ -121,7 +121,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			<button id="cadastrar_usuario" type="submit" class="btn btn-primary">Cadastrar</button>
 			<br>
 			<br>
-			<a href="dashboard.php">Voltar</a>
+			<a href="dashboard_simpress.php">Voltar</a>
 			<br>
 			<label id="erro" style="color:red"><?php echo $erro ?></label>
 			<br>
@@ -131,4 +131,4 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </form>
 </body>
 
-<?php require_once("../html/htmlEnd.php"); ?>
+<?php require("../html/htmlEnd.php"); ?>

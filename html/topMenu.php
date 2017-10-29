@@ -16,11 +16,13 @@
 		<ul class="nav top-menu">
 			<!-- settings start -->
 			<li class="dropdown">
-				<a class="dropdown-toggle"
-				   href="#">
+				<a onclick="print()">
 					<i class="fa fa-print"></i>
 				</a>
 			</li>
+			
+			
+			
 			<!-- settings end -->
 			<!-- inbox dropdown start-->
 			<li id="header_inbox_bar"

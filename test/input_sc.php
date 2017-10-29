@@ -9,7 +9,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 ?>
 
 
-<?php require_once("../html/htmlStart.php"); ?>
+<?php require("../html/htmlStart.php"); ?>
 
 <h4>Cadastro de Solicitação de Compra</h4>
 <br>
@@ -245,4 +245,4 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 		});
 </script>
 
-<?php require_once("../html/htmlEnd.php"); ?>
+<?php require("../html/htmlEnd.php"); ?>

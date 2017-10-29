@@ -78,7 +78,7 @@ nbdist/
 # *.sublime-project
 
 # SFTP configuration file
-sftp-config.json
+sftp-configSup.json
 
 # Package control specific files
 Package Control.last-run

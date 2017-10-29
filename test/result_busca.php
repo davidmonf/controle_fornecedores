@@ -8,42 +8,140 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 include("conexao.php")
 ?>
 
-<?php require_once("../html/htmlStart.php"); ?>
+<?php require("../html/htmlStart.php"); ?>
+
+<!--SELECT COUNT(crs.DESC_CR_SUPERINT)/66, crs.DESC_CR_SUPERINT FROM `crs`, (SELECT impressoras.*, crs.DESC_CR_GER, crs.DESC_CR_SUPERINT FROM impressoras INNER JOIN crs ON LPAD(impressoras.CR,5,'00000') = crs.CR WHERE $query) AS SELECIONADO GROUP BY DESC_CR_SUPERINT-->
+
+<div id="canvas-holder" style="width:50%">
+	<canvas id="chart-area" />
+</div>
+
+<script id="chartSuperintendencias">
+	var config = {
+		type: 'doughnut',
+		data: {
+			datasets: [{
+				data: [
+					<?php ?>'10',
+					<?php ?>'10',
+					<?php ?>'10',
+					<?php ?>'10',
+					<?php ?>'10',
+					<?php ?>'10'
+					
+				],
+				backgroundColor: [
+					window.chartColors.red,
+					window.chartColors.orange,
+					window.chartColors.yellow,
+					window.chartColors.green,
+					window.chartColors.blue,
+					window.chartColors.purple
+				],
+				label: 'Superintendências'
+			}],
+			labels: [
+				"SUP1",
+				"SUP2",
+				"SUP3",
+				"SUP4",
+				"SUP5",
+				"SUP6"
+			]
+		},
+		options: {
+			responsive: true,
+			legend: {
+				position: 'top',
+			},
+			title: {
+				display: true,
+				text: 'Superintendencias'
+			},
+			animation: {
+				animateScale: true,
+				animateRotate: true
+			}
+		}
+	};
+	window.onload = function() {
+		var ctx = document.getElementById("chart-area").getContext("2d");
+		window.myDoughnut = new Chart(ctx, config);
+	};
+	
+</script>
 
 <?php
-$query = '';
-if ($_POST['busca_serial'] != NULL) {$serial = $_POST['busca_serial']; $query .= "SERIE = '".$serial."' AND ";}
-if ($_POST['busca_cidade'] != NULL) {$cidade = $_POST['busca_cidade']; $query .= "CIDADE = '".$cidade."' AND ";}
-if ($_POST['busca_uf'] != NULL) {$uf = $_POST['busca_uf']; $query .= "UF = '".$uf."' AND ";}
-if ($_POST['busca_cr'] != NULL) {$cr = $_POST['busca_cr']; $query .= "CR = '".$cr."' AND ";}
-if ($_POST['busca_item'] != NULL) {$item = $_POST['busca_item']; $query .= "ITEM_CONTRATO = '".$item."' AND ";}
-if ($_POST['busca_desccr'] != NULL) {$desc_cr = $_POST['busca_desccr']; $query .= "DESCRICAO_CR = '".$desc_cr."' AND ";}
-if ($_POST['busca_gerencia'] != NULL) {$gerencia = $_POST['busca_gerencia']; $query .= "GERENCIA = '".$gerencia."' AND ";}
-if ($_POST['busca_superint'] != NULL) {$superint = $_POST['busca_superint']; $query .= "SUPERINT = '".$superint."'";}
-
-$sql = "SELECT SERIE, CIDADE, UF, CR, ITEM_CONTRATO, DESCRICAO_CR, GERENCIA, SUPERINT FROM impressoras WHERE $query";
-$sql_trim = rtrim ($sql, " AND ");
-
-$result = mysql_query($sql_trim, $conecta_banco) or print(mysql_error());
-/*echo ('linhas: '.mysql_num_rows($result).'!!! <br/>');*/
+if ((!isset($_POST['busca_serial'])) || (!isset($_POST['busca_cidade'])) || (!isset($_POST['busca_uf'])) || (!isset($_POST['busca_cr'])) || (!isset($_POST['busca_item'])) || (!isset($_POST['busca_desccr'])) || (!isset($_POST['busca_gerencia'])) || (!isset($_POST['busca_superint']))) {
+	$sql = "SELECT impressoras.*, crs.DESC_CR_GER, crs.DESC_CR_SUPERINT FROM impressoras INNER JOIN crs ON LPAD(impressoras.CR,5,'00000') = crs.CR WHERE 1 ORDER BY ITEM_CONTRATO";
+}
+else {
+	$query = '';
+	if ($_POST['busca_serial'] != NULL) {
+		$serial = $_POST['busca_serial'];
+		$query .= "SERIE = '" . $serial . "' AND ";
+	}
+	if ($_POST['busca_cidade'] != NULL) {
+		$cidade = $_POST['busca_cidade'];
+		$query .= "CIDADE = '" . $cidade . "' AND ";
+	}
+	if ($_POST['busca_uf'] != NULL) {
+		$uf = $_POST['busca_uf'];
+		$query .= "UF = '" . $uf . "' AND ";
+	}
+	if ($_POST['busca_cr'] != NULL) {
+		$cr = $_POST['busca_cr'];
+		$query .= "LPAD(impressoras.CR,5,'00000') AS impressoras.CR = '" . $cr . "' AND ";
+	}
+	if ($_POST['busca_item'] != NULL) {
+		$item = $_POST['busca_item'];
+		$query .= "ITEM_CONTRATO = '" . $item . "' AND ";
+	}
+	if ($_POST['busca_desccr'] != NULL) {
+		$desc_cr = $_POST['busca_desccr'];
+		$query .= "DESCRICAO_CR = '" . $desc_cr . "' AND ";
+	}
+	if ($_POST['busca_gerencia'] != NULL) {
+		$gerencia = $_POST['busca_gerencia'];
+		$query .= "crs.DESC_CR_GER = '" . $gerencia . "' AND ";
+	}
+	if ($_POST['busca_superint'] != NULL) {
+		$superint = $_POST['busca_superint'];
+		$query .= "crs.DESC_CR_SUPERINT = '" . $superint . "'";
+	}
+	
+	$sql = "SELECT impressoras.*, crs.DESC_CR_GER, crs.DESC_CR_SUPERINT FROM impressoras INNER JOIN crs ON LPAD(impressoras.CR,5,'00000') = crs.CR WHERE $query";
+	$sql = rtrim($sql, " AND ");
+	$sql = ($sql . " ORDER BY ITEM_CONTRATO");
+}
+	$result = mysql_query($sql, $conecta_banco) or print(mysql_error());
+echo ("<br>");
+echo ("<table class='table table-bordered table-responsive'>");
 	if (mysql_num_rows($result) > 0 && mysql_num_rows($result) < 2) {
+		echo ("<tr><td>Número de série</td><td>Modelo</td><td>IP</td><td>Cidade</td><td>UF</td><td>CR</td><td>Setor</td><td>Item Contrato</td><td>Gerência</td><td>Superintendência</td></tr>");
 		while ($resultado = mysql_fetch_assoc($result)) {
-			echo($resultado['SERIE'] . "<br/>");
-			echo($resultado['CIDADE'] . "<br/>");
-			echo($resultado['UF'] . "<br/>");
-			echo($resultado['CR'] . "<br/>");
-			echo($resultado['ITEM_CONTRATO'] . "<br/>");
-			echo($resultado['DESCRICAO_CR'] . "<br/>");
-			echo($resultado['GERENCIA'] . "<br/>");
-			echo($resultado['SUPERINT'] . "<br/>");
+			echo("<tr><td>".$resultado['SERIE'] . "</td>");
+			echo("<td>".$resultado['MODELO'] . "</td>");
+			echo("<td>".$resultado['IP'] . "</td>");
+			echo utf8_encode("<td>".$resultado['CIDADE'] . "</td>");
+			echo("<td>".$resultado['UF'] . "</td>");
+			echo("<td>".$resultado['CR'] . "</td>");
+			echo("<td>".$resultado['DESCRICAO_CR'] . "</td>");
+			echo("<td>".$resultado['ITEM_CONTRATO'] . "</td>");
+			echo("<td>".$resultado['DESC_CR_GER'] . "</td>");
+			echo("<td>".$resultado['DESC_CR_SUPERINT'] . "</td></tr>");
 		}
 	}
 	elseif (mysql_num_rows($result) > 1){
-		echo('Mais de um resultado foi encontrado (em construção)');
+		echo ("<tr><td>Número de série</td><td>Modelo</td><td>IP</td><td>Cidade</td><td>UF</td><td>CR</td><td>Setor</td><td>Item Contrato</td><td>Gerência</td><td>Superintendência</td></tr>");
+		while ($resultado = mysql_fetch_assoc($result)) {
+			echo utf8_encode("<tr class='table'><td>".$resultado['SERIE']."</td><td>".$resultado['MODELO']."</td><td>".$resultado['IP']."</td><td>".$resultado['CIDADE']."</td><td>".$resultado['UF']."</td><td>".$resultado['CR']."</td><td>".$resultado['DESCRICAO_CR']."</td><td>".$resultado['ITEM_CONTRATO']."</td><td>".$resultado['DESC_CR_GER']."</td><td>".$resultado['DESC_CR_SUPERINT']."</td></tr>");
+		}
+		echo("</table>");
 	}
 	else{
 		echo ('Não foi encontrado nenhum item');
 	}
-
+echo ("</table>");
 ?>
 <?php require("../html/htmlEnd.php"); ?>

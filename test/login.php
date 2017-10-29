@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 						if($pwd == $senha){
 							session_start();
 							$_SESSION['username'] = $usuario;
-							header("location: dashboard.php");
+							header("location: dashboard_simpress.php");
 						} else{
 							$pwd_err = 'Senha incorreta.';
 							$erro = $pwd_err;
@@ -73,7 +73,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="pt-BR">
 
 <!--HEAD-->
-<?php require_once("../html/head.php"); ?>
+<?php require("../html/head.php"); ?>
 <!--/HEAD-->
 
 <body>

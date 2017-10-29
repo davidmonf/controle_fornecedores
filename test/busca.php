@@ -16,7 +16,7 @@ include("conexao.php")
 		<div class="row">
 			<div class="col-md-6">
 				<label for="busca_serial"
-				       class="form-control-label">Serie: </label>
+				       class="form-control-label">Série: </label>
 				<select class="form-control"
 				        id="busca_serial"
 				        name="busca_serial">
@@ -129,12 +129,12 @@ include("conexao.php")
 				        id="busca_gerencia"
 				        name="busca_gerencia">
 					<?php
-					$sql_gerencia = "SELECT GERENCIA FROM impressoras GROUP BY GERENCIA ORDER BY GERENCIA ASC";
+					$sql_gerencia = "SELECT DESC_CR_GER FROM crs WHERE DESC_CR_GER != 'CR' GROUP BY DESC_CR_GER ORDER BY DESC_CR_GER ASC";
 					$result_gerencia = mysql_query($sql_gerencia, $conecta_banco) or print(mysql_error());
 					echo("<option value='' selected>Selecionar Gerencia</option>");
 					while ($resultado_gerencia = mysql_fetch_assoc($result_gerencia))
 					{
-						$gerencia = $resultado_gerencia['GERENCIA'];
+						$gerencia = $resultado_gerencia['DESC_CR_GER'];
 						echo("<option value=\"".$gerencia."\">".$gerencia."</option>");
 					}
 					?>
@@ -147,12 +147,12 @@ include("conexao.php")
 				        id="busca_superint"
 				        name="busca_superint">
 					<?php
-					$sql_superint = "SELECT SUPERINT FROM impressoras GROUP BY SUPERINT ORDER BY SUPERINT ASC";
+					$sql_superint = "SELECT DESC_CR_SUPERINT FROM crs WHERE DESC_CR_SUPERINT != 'CR' GROUP BY DESC_CR_SUPERINT ORDER BY DESC_CR_SUPERINT ASC";
 					$result_superint = mysql_query($sql_superint, $conecta_banco) or print(mysql_error());
 					echo("<option value='' selected>Selecionar Superintendencia</option>");
 					while ($resultado_superint = mysql_fetch_assoc($result_superint))
 					{
-						$superint = $resultado_superint['SUPERINT'];
+						$superint = $resultado_superint['DESC_CR_SUPERINT'];
 						echo("<option value=\"".$superint."\">".$superint."</option>");
 					}
 					?>
@@ -160,7 +160,10 @@ include("conexao.php")
 			</div>
 		</div>
 		<br>
-		<button id="buscar_botao" type="submit" class="btn btn-primary">Buscar</button>
+		<div class="col-md-12">
+			<button id="buscar_botao" type="submit" class="btn btn-primary">Buscar</button>
+			<button id="limpar" type="reset" class="btn btn-default">Limpar</button>
+		</div>
 	</form>
 </body>
 

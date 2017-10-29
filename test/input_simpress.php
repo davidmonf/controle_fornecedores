@@ -9,8 +9,8 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 ?>
 
 
-<?php require_once("../html/htmlStart.php"); ?>
-
+<?php require("../html/htmlStart.php"); ?>
+<br>
 <h4>Cadastro de Equipamento Simpress</h4>
 <br>
 
@@ -329,8 +329,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 	</div>
 	<div class="col-md-12">
 		<button id="incluir" type="submit" class="btn btn-primary">Incluir</button>
-		<!--<button id="buscar" type="submit" class="btn btn-primary">Buscar</button>-->
-		<button id="limpar" type="submit" class="btn btn-primary">Limpar</button>
+		<button id="limpar" type="reset" class="btn btn-default">Limpar</button>
 	</div>
 </div>
 </div>
@@ -416,4 +415,4 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 	
 	}
 ?>
-<?php require_once("../html/htmlEnd.php"); ?>
+<?php require("../html/htmlEnd.php"); ?>

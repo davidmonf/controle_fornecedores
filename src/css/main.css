@@ -190,7 +190,7 @@ ul.sidebar-menu li a {
 }
 
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-	background: black;
+	background: #36384C;
 	color: #fff;
 	display: block;
 
@@ -217,6 +217,11 @@ ul.sidebar-menu li a.active i {
 .mail-info, .mail-info:hover {
 	margin: -3px 6px 0 0;
 	font-size: 11px;
+}
+
+.dropdown-simpress{
+
+	
 }
 
 /* MAIN CONTENT CONFIGURATION */
@@ -691,3 +696,47 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 	background: lightgray;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+
+.ui-datepicker-calendar{
+	display: none;
+
+}
+
+
+
+@media print {
+
+	header {
+		display: none;
+	}
+
+	#main-content, #main-content *{
+
+		visibility: visible;
+		display: block;
+
+	}
+
+	#main-content{
+		position: fixed !important;
+
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+}
+
+/*
+@page {
+	margin: 0.5cm;
+}
+
+@page :left {
+	margin: 0.5cm;
+}
+
+@page :right {
+	margin: 0.8cm;
+}*/

@@ -15,7 +15,7 @@
 			<h5 class="text-center">Usuário <?php echo $_SESSION['username'] ?></h5>
 			
 			<li class="mt">
-				<a href="../test/dashboard.php">
+				<a href="../test/dashboard_simpress.php">
 					<i class="fa fa-dashboard"></i>
 					<span>Dashboard</span>
 				</a>
@@ -35,8 +35,30 @@
 				<div id="dropdown-simpress" class="panel-collpase collapse">
 					<div class="panel-body">
 						<ul class="nav navbar-nav">
-							<li><a href="../test/input_simpress.php">Cadastro</a></li>
-							<li><a href="../test/busca.php">Busca</a></li>
+							<a href="../test/dashboard_simpress.php">
+								<i class="fa fa-dashboard"></i>
+								<span>Dashboard</span>
+							</a>
+							<br>
+							<a href="../test/input_simpress.php">
+								<i class="fa fa-dashboard"></i>
+								<span>Cadastro</span>
+							</a>
+							<br>
+							<a href="../test/busca.php">
+								<i class="fa fa-dashboard"></i>
+								<span>Busca</span>
+							</a>
+							<br>
+							<a href="../test/upload.php">
+								<i class="fa fa-dashboard"></i>
+								<span>Enviar</span>
+							</a>
+							<br>
+							<a href="../test/rateio.php">
+								<i class="fa fa-dashboard"></i>
+								<span>Rateio</span>
+							</a>
 						</ul>
 					</div>
 				</div>
