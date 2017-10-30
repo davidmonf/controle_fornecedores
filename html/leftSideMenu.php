@@ -35,29 +35,34 @@
 				<div id="dropdown-simpress" class="panel-collpase collapse">
 					<div class="panel-body">
 						<ul class="nav navbar-nav">
-							<a href="../test/dashboard_simpress.php">
+							<!--<a href="../test/dashboard_simpress.php">
 								<i class="fa fa-dashboard"></i>
 								<span>Dashboard</span>
 							</a>
-							<br>
+							<br>-->
 							<a href="../test/input_simpress.php">
-								<i class="fa fa-dashboard"></i>
+								<i class="fa fa-plus"></i>
 								<span>Cadastro</span>
 							</a>
 							<br>
 							<a href="../test/busca.php">
-								<i class="fa fa-dashboard"></i>
+								<i class="fa fa-search"></i>
 								<span>Busca</span>
 							</a>
 							<br>
 							<a href="../test/upload.php">
-								<i class="fa fa-dashboard"></i>
+								<i class="fa fa-upload"></i>
 								<span>Enviar</span>
 							</a>
 							<br>
 							<a href="../test/rateio.php">
-								<i class="fa fa-dashboard"></i>
+								<i class="fa fa-money"></i>
 								<span>Rateio</span>
+							</a>
+							<br>
+							<a href="../test/visualiza_geral.php">
+								<i class="fa fa-file-excel-o"></i>
+								<span>Relatórios</span>
 							</a>
 						</ul>
 					</div>

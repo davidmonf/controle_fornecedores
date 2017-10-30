@@ -20,28 +20,47 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
        value="<?php include("conta_impressoras.php"); ?>"
        size="1"
        readonly>
+	<label for="qtd_geral"
+	       class="form-control-label">Valor Geral:</label>
+	<input type="text"
+	       id="qtd_geral"
+	       value="<?php echo($valor_total); ?>"
+	       size="1"
+	       readonly>
 <br>
 <br>
 <div class="panel-group">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h4 class="panel-title">
-				<a data-toggle="collapse" href="#">Presidência do Conselho - Total de Impressoras:</a>
+				<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=259'">Presidência do Conselho - Total de Impressoras:</a>
 				<input type="text"
 				       id="qtd_geral"
-				       value="<?php echo($prescons); ?>"
+				       value="<?php echo utf8_encode($prescons); ?>"
 				       size="1"
+				       readonly>
+				Valor Total:
+				<input type="text"
+				       id="v_prescons"
+				       value="<?php echo utf8_encode($v_prescons); ?>"
+				       size="4"
 				       readonly>
 			</h4>
 		</div>
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a class="fa fa-plus-square-o" data-toggle="collapse" href="#suger"></a>
-				<a data-toggle="collapse" href="#">Superintendência Geral - SUGER - Total de Impressoras:</a>
+				<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=48'">Superintendência Geral - SUGER - Total de Impressoras:</a>
 				<input type="text"
 				       id="qtd_geral"
-				       value="<?php echo($suger); ?>"
+				       value="<?php echo utf8_encode($suger); ?>"
 				       size="1"
+				       readonly>
+				Valor Total:
+				<input type="text"
+				       id="v_suger"
+				       value="<?php echo utf8_encode($v_suger); ?>"
+				       size="4"
 				       readonly>
 			</h4>
 		</div>
@@ -49,11 +68,16 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#getec"></a>
-					<a data-toggle="collapse" href="#">Gerência de Tecnologia e Suporte</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=3125'">Gerência de Tecnologia e Suporte</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_tec_sup); ?>"
+					       value="<?php echo utf8_encode($g_tec_sup); ?>"
 					       size="1"
+					       readonly>
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_tec_sup); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -65,11 +89,16 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#sistemas"></a>
-					<a data-toggle="collapse" href="#">Gerência de Sistemas e Processos</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=241'">Gerência de Sistemas e Processos</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_sis_proc); ?>"
+					       value="<?php echo utf8_encode($g_sis_proc); ?>"
 					       size="1"
+					       readonly>
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_sis_proc); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -82,11 +111,16 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#rh"></a>
-					<a data-toggle="collapse" href="#">Gerência de Recursos Humanos</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=115'">Gerência de Recursos Humanos</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_rh); ?>"
+					       value="<?php echo utf8_encode($g_rh); ?>"
 					       size="1"
+					       readonly>
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_rh); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -99,11 +133,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a class="fa fa-plus-square-o" data-toggle="collapse" href="#safin"></a>
-				<a data-toggle="collapse" href="#">Superintendência de Administração e Finanças - SAFIN - Total de Impressoras:</a>
+				<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=22'">Superintendência de Administração e Finanças - SAFIN - Total de Impressoras:</a>
 				<input type="text"
 				       id="qtd_geral"
-				       value="<?php echo($safin); ?>"
+				       value="<?php echo utf8_encode($safin); ?>"
 				       size="1"
+				       readonly>
+				Valor Total:
+				<input type="text"
+				       id="v_suger"
+				       value="<?php echo utf8_encode($v_safin); ?>"
+				       size="4"
 				       readonly>
 			</h4>
 		</div>
@@ -111,11 +151,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#contabil"></a>
-					<a data-toggle="collapse" href="#">Gerência Contábil</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=3131'">Gerência Contábil</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_contabil); ?>"
+					       value="<?php echo utf8_encode($g_contabil); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_contabil); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -126,11 +172,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#financeira"></a>
-					<a data-toggle="collapse" href="#">Gerência Financeira</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=3133'">Gerência Financeira</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_financeira); ?>"
+					       value="<?php echo utf8_encode($g_financeira); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_financeira); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -140,11 +192,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#compras"></a>
-					<a data-toggle="collapse" href="#">Gerência de Compras, Patrimônio e Obras</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=3129'">Gerência de Compras, Patrimônio e Obras</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_compras_patr_obras); ?>"
+					       value="<?php echo utf8_encode($g_compras_patr_obras); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_compras_patr_obras); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -158,11 +216,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a class="fa fa-plus-square-o" data-toggle="collapse" href="#sijuc"></a>
-				<a data-toggle="collapse" href="#">Superintendência Institucional, Juridico e Compliance - SIJUC - Total de Impressoras:</a>
+				<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=3945'">Superintendência Institucional, Juridico e Compliance - SIJUC - Total de Impressoras:</a>
 				<input type="text"
 				       id="qtd_geral"
-				       value="<?php echo($sijuc); ?>"
+				       value="<?php echo utf8_encode($sijuc); ?>"
 				       size="1"
+				       readonly>
+				Valor Total:
+				<input type="text"
+				       id="v_suger"
+				       value="<?php echo utf8_encode($v_sijuc); ?>"
+				       size="4"
 				       readonly>
 			</h4>
 		</div>
@@ -170,11 +234,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#comunicacao"></a>
-					<a data-toggle="collapse" href="#">Gerência de Comunicação</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=33'">Gerência de Comunicação</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_comunicacao); ?>"
+					       value="<?php echo utf8_encode($g_comunicacao); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_comunicacao); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -186,11 +256,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#g_jur_comp"></a>
-					<a data-toggle="collapse" href="#">Gerência Jurídica e Compliance</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=4654'">Gerência Jurídica e Compliance</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_jur); ?>"
+					       value="<?php echo utf8_encode($g_jur); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_jur); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -204,11 +280,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a class="fa fa-plus-square-o" data-toggle="collapse" href="#sunop"></a>
-				<a data-toggle="collapse" href="#">Superintendência Nacional de Operações - SUNOP - Total de Impressoras:</a>
+				<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=191'">Superintendência Nacional de Operações - SUNOP - Total de Impressoras:</a>
 				<input type="text"
 				       id="qtd_geral"
-				       value="<?php echo($sunop); ?>"
+				       value="<?php echo utf8_encode($sunop); ?>"
 				       size="1"
+				       readonly>
+				Valor Total:
+				<input type="text"
+				       id="v_suger"
+				       value="<?php echo utf8_encode($v_sunop); ?>"
+				       size="4"
 				       readonly>
 			</h4>
 		</div>
@@ -216,11 +298,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#capacitacao"></a>
-					<a data-toggle="collapse" href="#">Gerência de Conteudo e Capacitação</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=191'">Gerência de Conteudo e Capacitação</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_conteudo_capac); ?>"
+					       value="<?php echo utf8_encode($g_conteudo_capac); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_conteudo_capac); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -232,11 +320,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#opsp"></a>
-					<a data-toggle="collapse" href="#">Gerência de Operações SP</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=4807'">Gerência de Operações SP</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_op_sp); ?>"
+					       value="<?php echo utf8_encode($g_op_sp); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_op_sp); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -247,11 +341,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#opnorte"></a>
-					<a data-toggle="collapse" href="#">Gerência de Operações Norte e CO</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=221'">Gerência de Operações Norte e CO</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_op_n_co); ?>"
+					       value="<?php echo utf8_encode($g_op_n_co); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_op_n_co); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -261,11 +361,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#opnordeste"></a>
-					<a data-toggle="collapse" href="#">Gerência de Operações Nordeste</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=76'">Gerência de Operações Nordeste</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_op_ne); ?>"
+					       value="<?php echo utf8_encode($g_op_ne); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_suger"
+					       value="<?php echo utf8_encode($v_op_ne); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -279,11 +385,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a class="fa fa-plus-square-o" data-toggle="collapse" href="#suasf"></a>
-				<a data-toggle="collapse" href="#">Superintendência de Ação Social e Filantropia - SUASF - Total de Impressoras:</a>
+				<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=4650'">Superintendência de Ação Social e Filantropia - SUASF - Total de Impressoras:</a>
 				<input type="text"
 				       id="qtd_geral"
-				       value="<?php echo($suasf); ?>"
+				       value="<?php echo utf8_encode($suasf); ?>"
 				       size="1"
+				       readonly>
+				Valor Total:
+				<input type="text"
+				       id="v_suger"
+				       value="<?php echo utf8_encode($v_suasf); ?>"
+				       size="4"
 				       readonly>
 			</h4>
 		</div>
@@ -291,11 +403,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#social"></a>
-					<a data-toggle="collapse" href="#">Gerência de Assistência Social</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=4652'">Gerência de Assistência Social</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="0<?php /*echo($g_social);*/ ?>"
+					       value="<?php echo($g_social); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_prescons"
+					       value="<?php echo utf8_encode($v_social); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -306,11 +424,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<a class="fa fa-plus-square-o" data-toggle="collapse" href="#sunat"></a>
-				<a data-toggle="collapse" href="#">Superintendência Nacional de Atendimento - SUNAT - Total de Impressoras:</a>
+				<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=38'">Superintendência Nacional de Atendimento - SUNAT - Total de Impressoras:</a>
 				<input type="text"
 				       id="qtd_geral"
-				       value="<?php echo($sunat); ?>"
+				       value="<?php echo utf8_encode($sunat); ?>"
 				       size="1"
+				       readonly>
+				Valor Total:
+				<input type="text"
+				       id="v_suger"
+				       value="<?php echo utf8_encode($v_sunat); ?>"
+				       size="4"
 				       readonly>
 			</h4>
 		</div>
@@ -318,11 +442,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#gdesplitoral"></a>
-					<a data-toggle="collapse" href="#">Gerência Regional Gde SP e Litoral</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=1672 '">Gerência Regional Gde SP e Litoral</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_reg_sp_lit); ?>"
+					       value="<?php echo utf8_encode($g_reg_sp_lit); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_prescons"
+					       value="<?php echo utf8_encode($v_reg_sp_lit); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -339,11 +469,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#oeste"></a>
-					<a data-toggle="collapse" href="#">Gerência Regional SP Oeste</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=1676'">Gerência Regional SP Oeste</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_sp_oeste); ?>"
+					       value="<?php echo utf8_encode($g_sp_oeste); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_prescons"
+					       value="<?php echo utf8_encode($v_sp_oeste); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -359,11 +495,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#leste"></a>
-					<a data-toggle="collapse" href="#">Gerência Regional SP Leste</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=60'">Gerência Regional SP Leste</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_sp_leste); ?>"
+					       value="<?php echo utf8_encode($g_sp_leste); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_prescons"
+					       value="<?php echo utf8_encode($v_sp_leste); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -379,11 +521,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#nordeste"></a>
-					<a data-toggle="collapse" href="#">Gerência Regional Nordeste</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=76'">Gerência Regional Nordeste</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_reg_nordeste); ?>"
+					       value="<?php echo utf8_encode($g_reg_nordeste); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_prescons"
+					       value="<?php echo utf8_encode($v_reg_nordeste); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -406,11 +554,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#norte"></a>
-					<a data-toggle="collapse" href="#">Gerência Regional Norte</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=160'">Gerência Regional Norte</a>
 					<input type="text"
 					       id="qtd_geral"
-					       value="<?php echo($g_reg_norte); ?>"
+					       value="<?php echo utf8_encode($g_reg_norte); ?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_prescons"
+					       value="<?php echo utf8_encode($v_reg_norte); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>
@@ -425,11 +579,17 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a class="fa fa-plus-square-o" data-toggle="collapse" href="#codf"></a>
-					<a data-toggle="collapse" href="#">Gerência Regional Centro-Oeste e DF</a>
+					<a data-toggle="collapse" href="#" onclick="location.href='../test/relatorio.php?id=92'">Gerência Regional Centro-Oeste e DF</a>
 					<input type="text"
 					       id="qtd_geral"
 					       value="0<?php /*echo($g_reg_co_df); */?>"
 					       size="1"
+					       readonly>
+					Valor Total:
+					<input type="text"
+					       id="v_prescons"
+					       value="<?php echo utf8_encode($v_reg_co_df); ?>"
+					       size="4"
 					       readonly>
 				</h4>
 			</div>

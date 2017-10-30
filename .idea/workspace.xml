@@ -27,30 +27,20 @@
           <file leaf-file-name="visualiza_geral.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/visualiza_geral.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="773">
-                  <caret line="430" column="35" lean-forward="false" selection-start-line="430" selection-start-column="35" selection-end-line="430" selection-end-column="35" />
+                <state relative-caret-position="425">
+                  <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="htmlStart.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/html/htmlStart.php">
+          <file leaf-file-name="relatorio.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/relatorio.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="conta_impressoras.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/conta_impressoras.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="306">
+                  <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
                   <folding>
-                    <marker date="1508793485921" expanded="true" signature="15:70" ph="SELECT COUNT... impressoras" />
+                    <marker date="1509395020375" expanded="true" signature="218:511" ph="SELECT impre... impressoras" />
                   </folding>
                 </state>
               </provider>
@@ -59,54 +49,10 @@
           <file leaf-file-name="gera_contagens.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/gera_contagens.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+                <state relative-caret-position="833">
+                  <caret line="50" column="74" lean-forward="false" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
                   <folding>
-                    <marker date="1509315289687" expanded="true" signature="16:23" ph="SELECT LPAD(... faturamento_simpress" />
-                    <marker date="1509315289687" expanded="true" signature="16:303" ph="SELECT LPAD(... faturamento_simpress" />
-                    <marker date="1509315289687" expanded="true" signature="500:2762" ph="..." />
-                    <marker date="1509315289687" expanded="true" signature="515:529" ph="..." />
-                    <marker date="1509315289687" expanded="true" signature="995:1007" ph="..." />
-                    <marker date="1509315289687" expanded="true" signature="1349:1603" ph="..." />
-                    <marker date="1509315289687" expanded="true" signature="1627:1746" ph="..." />
-                    <marker date="1509315289687" expanded="true" signature="1838:1952" ph="..." />
-                    <marker date="1509315289687" expanded="true" signature="2242:2377" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dashboard_simpress.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/dashboard_simpress.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="rateio.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/rateio.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="72" lean-forward="false" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-                  <folding>
-                    <marker date="1508880465203" expanded="true" signature="307:483" ph="SELECT VALOR... faturamento_simpress" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="result_busca.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/result_busca.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-                  <folding>
-                    <marker date="1509192564656" expanded="true" signature="1817:1982" ph="SELECT impre... impressoras" />
-                    <marker date="1509192564656" expanded="true" signature="3065:3206" ph="SELECT impre... impressoras" />
-                    <marker date="1509192564656" expanded="true" signature="4566:4942" ph="..." />
+                    <marker date="1509402562484" expanded="true" signature="16:505" ph="SELECT impre... impressoras" />
                   </folding>
                 </state>
               </provider>
@@ -115,17 +61,17 @@
           <file leaf-file-name="busca.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/busca.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="901">
-                  <caret line="114" column="98" lean-forward="false" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="98" />
+                <state relative-caret-position="329">
+                  <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="18" />
                   <folding>
-                    <marker date="1508879378515" expanded="true" signature="585:633" ph="SELECT SERIE... impressoras" />
-                    <marker date="1508879378515" expanded="true" signature="1253:1319" ph="SELECT CIDAD... impressoras" />
-                    <marker date="1508879378515" expanded="true" signature="1919:1973" ph="SELECT UF FR... impressoras" />
-                    <marker date="1508879378515" expanded="true" signature="2537:2591" ph="SELECT CR FR... impressoras" />
-                    <marker date="1508879378515" expanded="true" signature="3177:3261" ph="SELECT DESCR... impressoras" />
-                    <marker date="1508879378515" expanded="true" signature="3895:3982" ph="SELECT ITEM_... impressoras" />
-                    <marker date="1508879378515" expanded="true" signature="4613:4712" ph="SELECT DESC_... crs" />
-                    <marker date="1508879378515" expanded="true" signature="5373:5492" ph="SELECT DESC_... crs" />
+                    <marker date="1509398381000" expanded="true" signature="585:633" ph="SELECT SERIE... impressoras" />
+                    <marker date="1509398381000" expanded="true" signature="1253:1319" ph="SELECT CIDAD... impressoras" />
+                    <marker date="1509398381000" expanded="true" signature="1945:1999" ph="SELECT UF FR... impressoras" />
+                    <marker date="1509398381000" expanded="true" signature="2563:2617" ph="SELECT CR FR... impressoras" />
+                    <marker date="1509398381000" expanded="true" signature="3203:3287" ph="SELECT DESCR... impressoras" />
+                    <marker date="1509398381000" expanded="true" signature="3921:4008" ph="SELECT ITEM_... impressoras" />
+                    <marker date="1509398381000" expanded="true" signature="4639:4738" ph="SELECT DESC_... crs" />
+                    <marker date="1509398381000" expanded="true" signature="5399:5518" ph="SELECT DESC_... crs" />
                   </folding>
                 </state>
               </provider>
@@ -138,18 +84,11 @@
           <file leaf-file-name="gera_contagens.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/gera_contagens.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="584">
-                  <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+                <state relative-caret-position="153">
+                  <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
                   <folding>
-                    <element signature="e#463#500#0#PHP" expanded="false" />
-                    <element signature="e#982#1334#0#PHP" expanded="false" />
-                    <element signature="e#1336#1612#0#PHP" expanded="false" />
-                    <element signature="e#1614#1823#0#PHP" expanded="false" />
-                    <element signature="e#1825#1965#0#PHP" expanded="false" />
-                    <element signature="e#1967#2230#0#PHP" expanded="false" />
-                    <element signature="e#2232#2379#0#PHP" expanded="false" />
-                    <marker date="1509315289687" expanded="true" signature="16:23" ph="SELECT LPAD(... faturamento_simpress" />
-                    <marker date="1509315289687" expanded="true" signature="16:303" ph="SELECT LPAD(... faturamento_simpress" />
+                    <marker date="1509402562484" expanded="true" signature="16:505" ph="SELECT impre... impressoras" />
+                    <marker date="1509402562484" expanded="true" signature="416:465" ph="SELECT MAX(C... faturamento_simpress" />
                   </folding>
                 </state>
               </provider>
@@ -187,6 +126,8 @@
       <find>cr</find>
       <find>SUPERINTEN</find>
       <find>superinten</find>
+      <find>sunat</find>
+      <find>sunop</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -199,8 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="Y:/test/menuTest.php" />
-        <option value="Y:/html/htmlStart.php" />
         <option value="Y:/html/htmlEnd.php" />
         <option value="Y:/src/css/login.css" />
         <option value="Y:/test/conexao.php" />
@@ -243,13 +182,15 @@
         <option value="$PROJECT_DIR$/test/upload.php" />
         <option value="$PROJECT_DIR$/test/sel_relatorios.php" />
         <option value="$PROJECT_DIR$/test/dashboard.php" />
-        <option value="$PROJECT_DIR$/test/busca.php" />
         <option value="$PROJECT_DIR$/test/rateio.php" />
         <option value="$PROJECT_DIR$/test/result_busca.php" />
         <option value="$PROJECT_DIR$/html/htmlStart.php" />
         <option value="$PROJECT_DIR$/test/dashboard_simpress.php" />
-        <option value="$PROJECT_DIR$/test/gera_contagens.php" />
+        <option value="$PROJECT_DIR$/html/leftSideMenu.php" />
+        <option value="$PROJECT_DIR$/test/relatorio.php" />
+        <option value="$PROJECT_DIR$/test/busca.php" />
         <option value="$PROJECT_DIR$/test/visualiza_geral.php" />
+        <option value="$PROJECT_DIR$/test/gera_contagens.php" />
       </list>
     </option>
   </component>
@@ -319,8 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,6 +271,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,20 +359,21 @@
       <workItem from="1509099901367" duration="303000" />
       <workItem from="1509115582803" duration="1830000" />
       <workItem from="1509192558489" duration="21335000" />
+      <workItem from="1509391226165" duration="364000" />
+      <workItem from="1509392857572" duration="9192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193459000" />
+    <option name="totallyTimeSpent" value="203015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1848" height="1096" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17248908" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17194323" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22413793" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -444,6 +386,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -460,8 +403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://Y:/test/logout.php" />
-    <entry file="file://Y:/src/css/main.css" />
     <entry file="file://Y:/test/basic_project_import" />
     <entry file="file://Y:/test/test_tab.php" />
     <entry file="file://Y:/html/head.php" />
@@ -504,14 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/sel_relatorios.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/dashboard.php" />
     <entry file="file://$PROJECT_DIR$/test/rateio.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -538,43 +471,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/busca.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="114" column="98" lean-forward="false" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="98" />
-          <folding>
-            <marker date="1508879378515" expanded="true" signature="585:633" ph="SELECT SERIE... impressoras" />
-            <marker date="1508879378515" expanded="true" signature="1253:1319" ph="SELECT CIDAD... impressoras" />
-            <marker date="1508879378515" expanded="true" signature="1919:1973" ph="SELECT UF FR... impressoras" />
-            <marker date="1508879378515" expanded="true" signature="2537:2591" ph="SELECT CR FR... impressoras" />
-            <marker date="1508879378515" expanded="true" signature="3177:3261" ph="SELECT DESCR... impressoras" />
-            <marker date="1508879378515" expanded="true" signature="3895:3982" ph="SELECT ITEM_... impressoras" />
-            <marker date="1508879378515" expanded="true" signature="4613:4712" ph="SELECT DESC_... crs" />
-            <marker date="1508879378515" expanded="true" signature="5373:5492" ph="SELECT DESC_... crs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/result_busca.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <marker date="1509192564656" expanded="true" signature="1817:1982" ph="SELECT impre... impressoras" />
-            <marker date="1509192564656" expanded="true" signature="3065:3206" ph="SELECT impre... impressoras" />
-            <marker date="1509192564656" expanded="true" signature="4566:4942" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://P:/aew.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://P:/aew.txt" />
     <entry file="file://$PROJECT_DIR$/test/conta_impressoras.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -595,35 +500,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/dashboard_simpress.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+        <state relative-caret-position="1479">
+          <caret line="87" column="34" lean-forward="false" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+          <folding>
+            <marker date="1509310714453" expanded="true" signature="2233:2238" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/leftSideMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/gera_contagens.php">
+    <entry file="file://$PROJECT_DIR$/test/sel_relatorios.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/relatorio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <marker date="1509315289687" expanded="true" signature="16:23" ph="SELECT LPAD(... faturamento_simpress" />
-            <marker date="1509315289687" expanded="true" signature="16:303" ph="SELECT LPAD(... faturamento_simpress" />
-            <marker date="1509315289687" expanded="true" signature="500:2762" ph="..." />
-            <marker date="1509315289687" expanded="true" signature="515:529" ph="..." />
-            <marker date="1509315289687" expanded="true" signature="995:1007" ph="..." />
-            <marker date="1509315289687" expanded="true" signature="1349:1603" ph="..." />
-            <marker date="1509315289687" expanded="true" signature="1627:1746" ph="..." />
-            <marker date="1509315289687" expanded="true" signature="1838:1952" ph="..." />
-            <marker date="1509315289687" expanded="true" signature="2242:2377" ph="..." />
+            <marker date="1509395020375" expanded="true" signature="218:511" ph="SELECT impre... impressoras" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/busca.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="18" />
+          <folding>
+            <marker date="1509398381000" expanded="true" signature="585:633" ph="SELECT SERIE... impressoras" />
+            <marker date="1509398381000" expanded="true" signature="1253:1319" ph="SELECT CIDAD... impressoras" />
+            <marker date="1509398381000" expanded="true" signature="1945:1999" ph="SELECT UF FR... impressoras" />
+            <marker date="1509398381000" expanded="true" signature="2563:2617" ph="SELECT CR FR... impressoras" />
+            <marker date="1509398381000" expanded="true" signature="3203:3287" ph="SELECT DESCR... impressoras" />
+            <marker date="1509398381000" expanded="true" signature="3921:4008" ph="SELECT ITEM_... impressoras" />
+            <marker date="1509398381000" expanded="true" signature="4639:4738" ph="SELECT DESC_... crs" />
+            <marker date="1509398381000" expanded="true" signature="5399:5518" ph="SELECT DESC_... crs" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/visualiza_geral.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="430" column="35" lean-forward="false" selection-start-line="430" selection-start-column="35" selection-end-line="430" selection-end-column="35" />
+        <state relative-caret-position="425">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/gera_contagens.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <marker date="1509402562484" expanded="true" signature="16:505" ph="SELECT impre... impressoras" />
+            <marker date="1509402562484" expanded="true" signature="416:465" ph="SELECT MAX(C... faturamento_simpress" />
+          </folding>
         </state>
       </provider>
     </entry>

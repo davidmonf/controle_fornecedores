@@ -45,7 +45,7 @@ include("conexao.php")
 					while ($resultado_cidade = mysql_fetch_assoc($result_cidade))
 					{
 						$cidade = $resultado_cidade['CIDADE'];
-						echo("<option value=\"".$cidade."\">".$cidade."</option>");
+						echo("<option value=\"".utf8_encode($cidade)."\">".utf8_encode($cidade)."</option>");
 					}
 					?>
 				</select>

@@ -12,9 +12,6 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 <?php require("../html/htmlStart.php"); ?>
 
 
-<body>
-
-
 <div class="row mtbox">
 	<div class="col-md-2 col-sm-2 col-md-offset-1 box0">
 		<div class="box1">
