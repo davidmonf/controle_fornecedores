@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-
 <!--HEAD-->
 <?php require("../html/head.php"); ?>
 <!--/HEAD-->

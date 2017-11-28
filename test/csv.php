@@ -25,6 +25,7 @@ echo '<pre>';
 $row = 1;
 $contalinhas=0;
 echo ("<table border='1'>");
+echo ("<tr><td>Série</td><td>N. Cont.</td><td>Modelo</td><td>Tipo</td><td>Dt. Inst.</td><td>Dt. Ret.</td><td>Inicial PB</td><td>Inicial Color</td><td>Final PB</td><td>Final Color</td><td>Dt. Leitura</td><td>Prd. PB</td><td>Prd. Color</td><td>Excd. PB</td><td>Excd. Color</td><td>Excd. PB Fat.</td><td>Excd. Color Fat.</td><td>Val. Unit.</td><td>Val. Excd. PB</td><td>Val Excd. Color</td><td>Acum. PB</td><td>Val. Mensal</td><td>Val. Pro Rata</td><td>Val. Fat.</td><td>ID Cliente</td><td>Cod. Cliente Fat.</td><td>CNPJ Fat.</td><td>Desc.</td><td>Endereço</td><td>CNPJ Inst.</td><td>Cod. Cliente Inst.</td><td>Via Leitura</td><td>Compet.</td></tr>");
 if (($handle = fopen($uploadfile, "r")) !== FALSE) {
 	while (($data = fgetcsv($handle, 50000, ";")) !== FALSE) {
 		$query = '';
@@ -34,28 +35,32 @@ if (($handle = fopen($uploadfile, "r")) !== FALSE) {
 		$contalinhas++;
 		for ($c=0; $c < $num; $c++) {
 			if ((($c == 0) && (strlen($data[$c])<>14))){break;}
-			if ($row > 8) {
-				if (($data[$c] == '') && ($data[$c+2]== '')){
+			if ($row > 9) {
+				if (($data[$c] == '') && ($data[$c + 2] == '')) {
 					break;
-				}
-				else {
-					$data[$c] = str_replace('.','',$data[$c]);
-					$data[$c] = rtrim ($data[$c], "'");
-					$data[$c] = trim ($data[$c], "'");
-					if ($data[$c] == ''){$data[$c]='NULL';}
-					$checadata = mb_substr($data[$c],2,1);
-					if ($checadata == '/'){
-						$data[$c] = mb_substr($data[$c],0,10);
+				} else {
+					//echo ("<script>alert(".$data[$c].");</script>");
+					$data[$c] = str_replace('.', '', $data[$c]);
+					$data[$c] = rtrim($data[$c], "'");
+					$data[$c] = trim($data[$c], "'");
+					if ($data[$c] == '') {
+						$data[$c] = 'NULL';
+					}
+					$checadata = mb_substr($data[$c], 2, 1);
+					if ($checadata == '/') {
+						$data[$c] = mb_substr($data[$c], 0, 10);
 						$data[$c] = Databr2db($data[$c]);
 					}
-					$checareais = mb_substr($data[$c],0,2);
-					if ($checareais == 'R$'){
-						$data[$c] = mb_substr($data[$c],3,9);
-						$data[$c] = str_replace(',','.',$data[$c]);
+					$checareais = mb_substr($data[$c], 0, 2);
+					if ($checareais == 'R$') {
+						$data[$c] = mb_substr($data[$c], 3, 9);
+						$data[$c] = str_replace(',', '.', $data[$c]);
 					}
-					if (($c > 16) && ($c < 21)){$data[$c] = str_replace(',','.',$data[$c]);} /*17,18,19,20*/
-					echo ("<td>".$data[$c]."</td>");
-					$query = ($query.",'".$data[$c]."'");
+					if (($c > 16) && ($c < 25)) {
+						$data[$c] = str_replace(',', '.', $data[$c]);
+					} /*17,18,19,20*/
+					echo("<td>" . $data[$c] . "</td>");
+					$query = ($query . ",'" . $data[$c] . "'");
 				}
 			}
 		}
@@ -66,7 +71,7 @@ if (($handle = fopen($uploadfile, "r")) !== FALSE) {
 		if ($query <> ('') && ($checklinha <> "'S")) {
 		$query_final = "INSERT INTO faturamento_simpress (ID_REG, SERIE, ITEM_CONTRATO, MODELO, TIPO_MAQUINA, INSTALACAO, RETIRADA, INICIAL_PB, INICIAL_COLOR, FINAL_PB, FINAL_COLOR, DATA_LEITURA, PRODUCAO_PB, PRODUCAO_COLOR, EXCED_PB, EXCED_COLOR, EXCED_PB_FAT, EXCED_COLOR_FAT, VALOR_UNIT, VALOR_UNIT_COLOR, VALOR_EXCED_PB, VALOR_EXCED_COLOR, ACUMULO_PB, VALOR_MENSAL, VALOR_PRO_RATA, VALOR_FAT, ID_CLIENTE, COD_CLIENTE_FAT, CNPJ_FAT, DESCRICAO, ENDERECO, CNPJ_INSTALACAO, COD_CLIENTE_INST, VIA_LEITURA, COMPETENCIA) VALUES (NULL,$query','".$_POST['compet']."')";
 		$query_final = str_replace('\'NULL\'','NULL',$query_final);
-		/*echo $query_final.'<br/>';*/
+		echo $query_final.'<br/>';
 		$result = mysql_query($query_final, $conecta_banco) or print(mysql_error());
 		}
 	}

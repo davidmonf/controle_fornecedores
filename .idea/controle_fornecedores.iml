@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://Y:">
+    <content url="file://Y:/">
       <sourceFolder url="file://Y:/src" isTestSource="false" />
       <sourceFolder url="file://Y:/test" isTestSource="true" />
     </content>

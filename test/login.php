@@ -77,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <!--/HEAD-->
 
 <body>
-	<h3 id="titulologin">Controle de Fornecedores</h3>
+	<h3 id="titulologin">Controle de Faturamento</h3>
 	
 	<div class="imgcontainer">
 		<img src="../src/images/presentation.png" alt="Controle de Fornecedores" class="logo">

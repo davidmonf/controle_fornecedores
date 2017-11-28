@@ -20,27 +20,29 @@ if (isset($_POST['competencia'])) {
 		echo("Não existem resultados de rateio para o mês selecionado");
 	}
 	else {
-		echo ("<table class='table table-bordered '>");
-		echo ("<tr><td>CR</td><td>Descrição CR</td><td>Valor</td></tr>");
+		echo ("<table class='table table-bordered table-striped'>");
+		echo ("<tr><th>CR</th><th>Descrição CR</th><th>Valor</th></tr>");
 		while ($resultado = mysql_fetch_assoc($result)) {
 			$valor_fat = $resultado['SUM(VALOR_FAT)'];
 			$total = $total + $valor_fat;
 			$valor_fat = (str_replace('.', ',', $valor_fat));
 			$id_cliente = $resultado['LPAD(ID_CLIENTE,5,\'00000\')'];
 			$descricao = $resultado['DESCRICAO'];
-			echo("<tr><td>" . $id_cliente . "</td><td>" . $descricao . "</td><td>R$ " . substr($valor_fat, 0, -1) . "</td></tr>");
+			echo utf8_encode("<tr><td>" . $id_cliente . "</td><td>" . $descricao . "</td><td>R$ " . substr($valor_fat, 0, -1) . "</td></tr>");
 		}
 		$total = (str_replace('.', ',', $total));
-		echo("<tr><td colspan='2' align='right'>TOTAL </td><td>R$ " . substr($total, 0, -1) . "</td></tr>");
+		echo("<tr><th colspan='2' align='right'>TOTAL </th><th>R$ " . substr($total, 0, -1) . "</th></tr>");
 		echo("</table>");
 	}
 }
 else
 {
 	echo ("<form method='POST' action='rateio.php' enctype='multipart/form-data' onSubmit='return()'>");
-	echo ("<br/>Digite a competência para gerar o rateio: <input type='text' name='competencia' id='competencia'/>");
-	echo ("<input type='submit' value='Gerar' />");
-	echo ("</form>");
+	echo ("<br/>Digite a competência para gerar o rateio:");
+	echo ("<div class='input-group col-md-3'>");
+	echo ("<input class='form-control' type='text' name='competencia' id='competencia'/>");
+	echo ("<span class='input-group-btn'> <input class='btn btn-primary' type='submit' value='Gerar' /> </span>");
+	echo ("</div></form>");
 }
 ?>
 
@@ -53,6 +55,9 @@ else
 				changeMonth: true,
 				changeYear: true,
 				showButtonPanel: true,
+				monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+				currentText: 'Hoje',
+				closeText: 'Pronto',
 				onClose: function(dateText, inst) {
 
 

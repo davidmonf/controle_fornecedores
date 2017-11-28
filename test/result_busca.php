@@ -83,6 +83,9 @@ else {
 	}
 	if ($_POST['busca_cidade'] != NULL) {
 		$cidade = $_POST['busca_cidade'];
+		//$cidade = iconv('UTF-8', 'ASCII//TRANSLIT', $cidade);
+		//$cidade = str_replace('\'','',$cidade);
+		//$cidade = trim($cidade);
 		$query .= "CIDADE = '" . $cidade . "' AND ";
 	}
 	if ($_POST['busca_uf'] != NULL) {
@@ -113,14 +116,14 @@ else {
 	$sql = "SELECT impressoras.*, crs.DESC_CR_GER, crs.DESC_CR_SUPERINT FROM impressoras INNER JOIN crs ON LPAD(impressoras.CR,5,'00000') = crs.CR WHERE $query";
 	$sql = rtrim($sql, " AND ");
 	$sql = ($sql . " ORDER BY ITEM_CONTRATO");
+	echo $sql;
 }
 	$result = mysql_query($sql, $conecta_banco) or print(mysql_error());
 echo ("<br>");
 echo ("<table class='table table-bordered table-responsive'>");
-	if (mysql_num_rows($result) > 0 && mysql_num_rows($result) < 2) {
 		echo ("<tr><td>Número de série</td><td>Modelo</td><td>IP</td><td>Cidade</td><td>UF</td><td>CR</td><td>Setor</td><td>Item Contrato</td><td>Gerência</td><td>Superintendência</td></tr>");
 		while ($resultado = mysql_fetch_assoc($result)) {
-			echo("<tr><td>".$resultado['SERIE'] . "</td>");
+			echo("<tr><td><a href='input_simpress.php?num_serie=".$resultado['SERIE'] . "'>".$resultado['SERIE'] . "</a></td>");
 			echo("<td>".$resultado['MODELO'] . "</td>");
 			echo("<td>".$resultado['IP'] . "</td>");
 			echo utf8_encode("<td>".$resultado['CIDADE'] . "</td>");
@@ -131,17 +134,16 @@ echo ("<table class='table table-bordered table-responsive'>");
 			echo("<td>".$resultado['DESC_CR_GER'] . "</td>");
 			echo("<td>".$resultado['DESC_CR_SUPERINT'] . "</td></tr>");
 		}
-	}
-	elseif (mysql_num_rows($result) > 1){
-		echo ("<tr><td>Número de série</td><td>Modelo</td><td>IP</td><td>Cidade</td><td>UF</td><td>CR</td><td>Setor</td><td>Item Contrato</td><td>Gerência</td><td>Superintendência</td></tr>");
-		while ($resultado = mysql_fetch_assoc($result)) {
-			echo utf8_encode("<tr class='table'><td>".$resultado['SERIE']."</td><td>".$resultado['MODELO']."</td><td>".$resultado['IP']."</td><td>".$resultado['CIDADE']."</td><td>".$resultado['UF']."</td><td>".$resultado['CR']."</td><td>".$resultado['DESCRICAO_CR']."</td><td>".$resultado['ITEM_CONTRATO']."</td><td>".$resultado['DESC_CR_GER']."</td><td>".$resultado['DESC_CR_SUPERINT']."</td></tr>");
-		}
-		echo("</table>");
-	}
-	else{
-		echo ('Não foi encontrado nenhum item');
-	}
+	//elseif (mysql_num_rows($result) > 1){
+		//echo ("<tr><td>Número de série</td><td>Modelo</td><td>IP</td><td>Cidade</td><td>UF</td><td>CR</td><td>Setor</td><td>Item Contrato</td><td>Gerência</td><td>Superintendência</td></tr>");
+		//while ($resultado = mysql_fetch_assoc($result)) {
+			//echo utf8_encode("<tr class='table'><td>".$resultado['SERIE']."</td><td>".$resultado['MODELO']."</td><td>".$resultado['IP']."</td><td>".$resultado['CIDADE']."</td><td>".$resultado['UF']."</td><td>".$resultado['CR']."</td><td>".$resultado['DESCRICAO_CR']."</td><td>".$resultado['ITEM_CONTRATO']."</td><td>".$resultado['DESC_CR_GER']."</td><td>".$resultado['DESC_CR_SUPERINT']."</td></tr>");
+		//}
+		//echo("</table>");
+	//}
+	//else{
+		//echo ('Não foi encontrado nenhum item');
+	//}
 echo ("</table>");
 ?>
 <?php require("../html/htmlEnd.php"); ?>

@@ -236,13 +236,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 		$("#cnpj_sc").mask("99.999.999/9999-99");
 	});
 
-	$.getScript( "../src/js/main.js" )
-		.done(function( script, textStatus ) {
-			console.log( textStatus );
-		})
-		.fail(function( jqxhr, settings, exception ) {
-			$( "div.log" ).text( "Triggered ajaxError handler." );
-		});
+
 </script>
 
 <?php require("../html/htmlEnd.php"); ?>

@@ -134,14 +134,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 		$("#data_conclusao").mask("99/99/9999");
 		$("#patrimonio").mask("99.999");
 	});
-
-	$.getScript( "../src/js/main.js" )
-		.done(function( script, textStatus ) {
-			console.log( textStatus );
-		})
-		.fail(function( jqxhr, settings, exception ) {
-			$( "div.log" ).text( "Triggered ajaxError handler." );
-		});
+	
 </script>
 
 <?php require("../html/htmlEnd.php"); ?>

@@ -7,7 +7,7 @@
 	<!--logo start-->
 	<a href="#"
 	   class="logo">
-		<b>Controle de Fornecedor</b>
+		<b>Controle de Faturamento</b>
 	</a>
 	<!--logo end-->
 	<div class="nav notify-row"
@@ -54,11 +54,13 @@
 	</div>
 	<div class="top-menu">
 		<ul class="nav pull-right top-menu">
+			<br>
 			<li>
 				<a class="logout"
 				   href=".\logout.php">Logout
-				</a>..
+				</a>
 			</li>
 		</ul>
 	</div>
 </header>
+

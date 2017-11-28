@@ -10,6 +10,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
 
 <?php require("../html/htmlStart.php"); ?>
+	<form enctype="multipart/form-data" action="csv.php" method="POST">
 	<br>
     <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
 	<label for="arquivo" class="form-control-label">Enviar esse arquivo: </label><input id="arquivo" name="arquivo" type="file" /><br>

@@ -1,0 +1,10 @@
+Relatório de Pré Faturamento;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Contrato;Cliente;Início da Competência;Fim da Competência;Valor Total;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+7048;CENTRO DE INTEGRAÇÃO EMPRESA ESCOLA CIEE;01/10/2017;31/10/2017;R$ 59.786,75;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Série;Ítem Contrato;Modelo;Tipo Maquina;Instalação;Retirada;Inicial P&B;Inicial Color;Final Pb;Final Color;Data Leitura;Produção PB;Produção Color;Excedência PB;Excedência Color;Exced. P&B Fat.;Exced.Color Fat.;Valor Unit.;Valor Unit. Color;Valor Exc. P&B;Valor Exc. Color;Acúmulo P&B;Valor Mensal;Valor (Pro Rata);Valor Fat.;Id Cliente;Cód.Cliente Fat.;CNPJ Faturamento;Descrição;Endereço;CNPJ Instalação;Cod.Cliente Inst.;Via de Leitura
+Z98UBQBH70000S;1;CLP680ND;Descentralizada;28/09/2016 00:00;;11350;26224;12411;29167;31/10/2017;1061;2943;1061;2943;1061;2943;0,033;0,29;35,013;853,47;0;R$ 83,41;R$ 83,41;R$ 971,893;1720;54356;'61600839000155';ADMINISTRACAO OSASCO;R DEP EMILIO CARLOS, 840 - VILA CAMPESINA, Osasco, SP, CEP: 06028000;'61600839010703';1103418;SOS enterprise
+Z98UBQBH70002S;2;CLP680ND;Descentralizada;11/10/2016 00:00;;429;2807;1560;6446;31/10/2017;1131;3639;1131;3639;1131;3639;0,033;0,29;37,323;1055,31;0;R$ 83,41;R$ 83,41;R$ 1.176,045;3122;54356;'61600839000155';JURIDICO;R TABAPUÃ, 445 - ITAIM BIBI, São Paulo, SP, CEP: 04533001;'61600839010460';1103452;SOS enterprise

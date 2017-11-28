@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5077ddf1-50c0-49ec-aa5b-f65946063879" name="Default" comment="" />
+    <list default="true" id="caa89e28-fc2a-4b9d-8fc0-5910e643406d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="Y:/test/Test_view.php" />
+      <change type="NEW" beforePath="" afterPath="Y:/test/gera_relatorio.php" />
+      <change type="NEW" beforePath="" afterPath="Y:/test/xxx.php" />
+      <change type="DELETED" beforePath="Y:/src/js/main-charts.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="Y:/.idea/controle_fornecedores.iml" afterPath="Y:/.idea/controle_fornecedores.iml" />
+      <change type="MODIFICATION" beforePath="Y:/.idea/modules.xml" afterPath="Y:/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="Y:/.idea/php.xml" afterPath="Y:/.idea/php.xml" />
+      <change type="MODIFICATION" beforePath="Y:/.idea/workspace.xml" afterPath="Y:/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="Y:/html/head.php" afterPath="Y:/html/head.php" />
+      <change type="MODIFICATION" beforePath="Y:/html/htmlEnd.php" afterPath="Y:/html/htmlEnd.php" />
+      <change type="MODIFICATION" beforePath="Y:/html/htmlStart.php" afterPath="Y:/html/htmlStart.php" />
+      <change type="MODIFICATION" beforePath="Y:/html/leftSideMenu.php" afterPath="Y:/html/leftSideMenu.php" />
+      <change type="MODIFICATION" beforePath="Y:/html/topMenu.php" afterPath="Y:/html/topMenu.php" />
+      <change type="MODIFICATION" beforePath="Y:/src/css/main.css" afterPath="Y:/src/css/main.css" />
+      <change type="MODIFICATION" beforePath="Y:/src/js/main.js" afterPath="Y:/src/js/main.js" />
+      <change type="MODIFICATION" beforePath="Y:/test/busca.php" afterPath="Y:/test/busca.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/csv.php" afterPath="Y:/test/csv.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/dashboard_simpress.php" afterPath="Y:/test/dashboard_simpress.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/gera_contagens.php" afterPath="Y:/test/gera_contagens.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/input_as.php" afterPath="Y:/test/input_as.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/input_assistencia.php" afterPath="Y:/test/input_assistencia.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/input_sc.php" afterPath="Y:/test/input_sc.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/input_simpress.php" afterPath="Y:/test/input_simpress.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/login.php" afterPath="Y:/test/login.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/menuTest.php" afterPath="Y:/test/menuTest.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/rateio.php" afterPath="Y:/test/rateio.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/relatorio.php" afterPath="Y:/test/relatorio.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/result_busca.php" afterPath="Y:/test/result_busca.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/upload.php" afterPath="Y:/test/upload.php" />
+      <change type="MODIFICATION" beforePath="Y:/test/visualiza_geral.php" afterPath="Y:/test/visualiza_geral.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,70 +40,59 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE" />
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="sel_relatorios.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/sel_relatorios.php">
+          <file leaf-file-name="relatorio.php" pinned="false" current-in-tab="true">
+            <entry file="file://Y:/test/relatorio.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="365">
+                  <caret line="413" column="152" lean-forward="false" selection-start-line="413" selection-start-column="152" selection-end-line="413" selection-end-column="152" />
+                  <folding>
+                    <marker date="1511880579296" expanded="true" signature="638:726" ph="SELECT DISTI... faturamento_simpress" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="visualiza_geral.php" pinned="false" current-in-tab="false">
+            <entry file="file://Y:/test/visualiza_geral.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="12325">
+                  <caret line="725" column="68" lean-forward="false" selection-start-line="725" selection-start-column="68" selection-end-line="725" selection-end-column="68" />
+                  <folding>
+                    <marker date="1511869218890" expanded="true" signature="33637:33659" ph="..." />
+                    <marker date="1511869218890" expanded="true" signature="33637:33669" ph="..." />
+                    <marker date="1511869218890" expanded="true" signature="33637:33679" ph="..." />
+                    <marker date="1511869218890" expanded="true" signature="33637:34012" ph="..." />
+                    <marker date="1511869218890" expanded="true" signature="33637:34020" ph="..." />
+                    <marker date="1511869218890" expanded="true" signature="33637:34027" ph="..." />
+                    <marker date="1511869218890" expanded="true" signature="33730:34003" ph="..." />
+                    <marker date="1511869218890" expanded="true" signature="34034:34067" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="rateio.php" pinned="false" current-in-tab="false">
+            <entry file="file://Y:/test/rateio.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <marker date="1509734701031" expanded="true" signature="307:483" ph="SELECT VALOR... faturamento_simpress" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="csv.php" pinned="false" current-in-tab="false">
+            <entry file="file://Y:/test/csv.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="986">
+                  <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="visualiza_geral.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/visualiza_geral.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="relatorio.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/relatorio.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-                  <folding>
-                    <marker date="1509395020375" expanded="true" signature="218:511" ph="SELECT impre... impressoras" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="gera_contagens.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/gera_contagens.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="833">
-                  <caret line="50" column="74" lean-forward="false" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
-                  <folding>
-                    <marker date="1509402562484" expanded="true" signature="16:505" ph="SELECT impre... impressoras" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="busca.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/busca.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="329">
-                  <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="18" />
-                  <folding>
-                    <marker date="1509398381000" expanded="true" signature="585:633" ph="SELECT SERIE... impressoras" />
-                    <marker date="1509398381000" expanded="true" signature="1253:1319" ph="SELECT CIDAD... impressoras" />
-                    <marker date="1509398381000" expanded="true" signature="1945:1999" ph="SELECT UF FR... impressoras" />
-                    <marker date="1509398381000" expanded="true" signature="2563:2617" ph="SELECT CR FR... impressoras" />
-                    <marker date="1509398381000" expanded="true" signature="3203:3287" ph="SELECT DESCR... impressoras" />
-                    <marker date="1509398381000" expanded="true" signature="3921:4008" ph="SELECT ITEM_... impressoras" />
-                    <marker date="1509398381000" expanded="true" signature="4639:4738" ph="SELECT DESC_... crs" />
-                    <marker date="1509398381000" expanded="true" signature="5399:5518" ph="SELECT DESC_... crs" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -80,15 +100,75 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="gera_contagens.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/gera_contagens.php">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="gera_relatorio.php" pinned="false" current-in-tab="true">
+            <entry file="file://Y:/test/gera_relatorio.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
                   <folding>
-                    <marker date="1509402562484" expanded="true" signature="16:505" ph="SELECT impre... impressoras" />
-                    <marker date="1509402562484" expanded="true" signature="416:465" ph="SELECT MAX(C... faturamento_simpress" />
+                    <marker date="1511879352375" expanded="true" signature="129:585" ph="SELECT crs .... impressoras" />
+                    <marker date="1511879352375" expanded="true" signature="610:1030" ph="SELECT crs .... faturamento_simpress" />
+                    <marker date="1511879352375" expanded="true" signature="1053:1097" ph="SELECT DESC_... crs" />
+                    <marker date="1511879352375" expanded="true" signature="1314:1834" ph="SELECT crs.D... faturamento_simpress" />
+                    <marker date="1511879352375" expanded="true" signature="1865:2436" ph="SELECT crs.D... faturamento_simpress" />
+                    <marker date="1511879352375" expanded="true" signature="2779:3082" ph="SELECT SUM( faturamento_simpress" />
+                    <marker date="1511879352375" expanded="true" signature="3110:3385" ph="SELECT SUM( faturamento_simpress" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gera_contagens.php" pinned="false" current-in-tab="false">
+            <entry file="file://Y:/test/gera_contagens.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="578">
+                  <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+                  <folding>
+                    <marker date="1511874961531" expanded="true" signature="59:446" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="1117:1121" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="1287:10856" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="1325:10854" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="1341:1573" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="1589:3584" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="1836:3573" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="1880:2132" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="2171:2413" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="2452:2694" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="2733:2995" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="3031:3278" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="3322:3569" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="3600:4985" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="3847:4974" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="3886:4158" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="4195:4422" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="4464:4701" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="4743:4970" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="5001:6150" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="5248:6139" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="5280:5532" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="5562:5804" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="5843:6135" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="6166:6978" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="6413:6967" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="6449:6706" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="6746:6963" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="6994:7323" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="7242:7312" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="7278:7308" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="7339:10852" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="7586:10851" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="7628:8990" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="7891:8764" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="7913:8156" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="8181:8439" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="8470:8758" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="9027:9482" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="9509:10847" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="9747:10621" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="9786:10044" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="10084:10347" ph="..." />
+                    <marker date="1511874961531" expanded="true" signature="10392:10615" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -98,99 +178,45 @@
       </split-second>
     </splitter>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>telefone</find>
-      <find>nome</find>
-      <find>too</find>
-      <find>toggl</find>
-      <find>main-conte</find>
-      <find>procon</find>
-      <find>ende</find>
-      <find>endere</find>
-      <find>uf</find>
-      <find>#003E7D</find>
-      <find>#424A5D</find>
-      <find>sidebar</find>
-      <find>tit</find>
-      <find>#1AB394</find>
-      <find>font</find>
-      <find>`</find>
-      <find>cr</find>
-      <find>SUPERINTEN</find>
-      <find>superinten</find>
-      <find>sunat</find>
-      <find>sunop</find>
+      <find>$valortotal</find>
+      <find>panel-heading</find>
+      <find>lightgray</find>
+      <find>nav-collapse</find>
+      <find>id_cliente</find>
     </findStrings>
-    <replaceStrings>
-      <replace>'</replace>
-      <replace>size=&quot;1&quot;</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="Y:/" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="Y:/test/visualiza_geral.php" />
+        <option value="Y:/test/gera_contagens.php" />
+        <option value="Y:/test/conexao_homolog.php" />
+        <option value="Y:/test/csv.php" />
         <option value="Y:/html/htmlEnd.php" />
-        <option value="Y:/src/css/login.css" />
-        <option value="Y:/test/conexao.php" />
-        <option value="Y:/test/logout.php" />
-        <option value="Y:/html/script.php" />
-        <option value="Y:/test/test_tab.php" />
-        <option value="Y:/html/topMenu.php" />
-        <option value="Y:/test/panel.php" />
-        <option value="Y:/test/input_sc.php" />
-        <option value="Y:/test/input_assistencia.php" />
-        <option value="Y:/test/input_as.php" />
-        <option value="Y:/html/leftSideMenu.php" />
-        <option value="Y:/test/basic_project_import" />
         <option value="Y:/html/head.php" />
-        <option value="Y:/test/input_simpress.php" />
-        <option value="Y:/test/dashboard.php" />
-        <option value="Y:/test/login.php" />
-        <option value="Y:/test/input_usuario.php" />
         <option value="Y:/test/busca.php" />
-        <option value="Y:/test/login.php" />
-        <option value="Y:/test/dashboard.php" />
-        <option value="Y:/test/input_usuario.php" />
-        <option value="Y:/html/topMenu.php" />
-        <option value="Y:/html/leftSideMenu.php" />
+        <option value="Y:/src/js/main-charts.js" />
+        <option value="Y:/test/csv.php" />
+        <option value="Y:/test/form_simpress_preenchido.php" />
         <option value="Y:/test/input_simpress.php" />
-        <option value="Y:/test/upload.php" />
-        <option value="Y:/test/csv.php" />
-        <option value="Y:/test/sel_relatorios.php" />
+        <option value="Y:/test/login.php" />
+        <option value="Y:/src/css/main.css" />
+        <option value="Y:/html/topMenu.php" />
+        <option value="Y:/test/visualiza_geral.php" />
+        <option value="Y:/test/relatorio.php" />
+        <option value="Y:/test/relatorio.php" />
         <option value="Y:/test/visualiza_geral.php" />
         <option value="Y:/test/csv.php" />
-        <option value="Y:/test/visualiza_geral.php" />
-        <option value="Y:/test/conta_impressoras.php" />
-        <option value="Y:/test/dashboard.php" />
-        <option value="Y:/test/result_busca.php" />
-        <option value="Y:/src/css/main.css" />
-        <option value="Y:/src/css/main.css" />
-        <option value="Y:/src/js/main.js" />
-        <option value="Y:/test/rateio.php" />
-        <option value="Y:/test/rateio.php" />
-        <option value="$PROJECT_DIR$/test/upload.php" />
-        <option value="$PROJECT_DIR$/test/sel_relatorios.php" />
-        <option value="$PROJECT_DIR$/test/dashboard.php" />
-        <option value="$PROJECT_DIR$/test/rateio.php" />
-        <option value="$PROJECT_DIR$/test/result_busca.php" />
-        <option value="$PROJECT_DIR$/html/htmlStart.php" />
-        <option value="$PROJECT_DIR$/test/dashboard_simpress.php" />
-        <option value="$PROJECT_DIR$/html/leftSideMenu.php" />
-        <option value="$PROJECT_DIR$/test/relatorio.php" />
-        <option value="$PROJECT_DIR$/test/busca.php" />
-        <option value="$PROJECT_DIR$/test/visualiza_geral.php" />
-        <option value="$PROJECT_DIR$/test/gera_contagens.php" />
+        <option value="Y:/test/gera_contagens.php" />
+        <option value="Y:/test/visualiza_geral_new.php" />
+        <option value="Y:/test/gera_relatorio.php" />
+        <option value="Y:/test/relatorio.php" />
+        <option value="Y:/test/gera_relatorio.php" />
       </list>
     </option>
   </component>
@@ -215,7 +241,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP">
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
       <path value="C:\xampp\php" />
     </include_path>
@@ -226,27 +252,11 @@
     <option name="width" value="1320" />
     <option name="height" value="784" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>AngularJS</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -259,42 +269,20 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Y" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="Y:" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
-    <property name="node.js.path.for.package.jscs" value="project" />
-    <property name="node.js.detected.package.jscs" value="true" />
-    <property name="node.js.selected.package.jscs" value="" />
+    <property name="last_opened_file_path" value="Y:/" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\79240sp\Documents\controle_fornecedores\test" />
-      <recent name="C:\wamp64\www\controle_fornecedores\paginas" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -316,77 +304,48 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5077ddf1-50c0-49ec-aa5b-f65946063879" name="Default" comment="" />
-      <created>1504559336816</created>
+      <changelist id="caa89e28-fc2a-4b9d-8fc0-5910e643406d" name="Default" comment="" />
+      <created>1510242585749</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1504559336816</updated>
-      <workItem from="1504559350512" duration="2879000" />
-      <workItem from="1504644113931" duration="2679000" />
-      <workItem from="1504647512164" duration="1760000" />
-      <workItem from="1504649497804" duration="1210000" />
-      <workItem from="1505336939392" duration="5675000" />
-      <workItem from="1505768051307" duration="549000" />
-      <workItem from="1505768656712" duration="2774000" />
-      <workItem from="1505852864089" duration="624000" />
-      <workItem from="1505854115576" duration="1584000" />
-      <workItem from="1505941484843" duration="6013000" />
-      <workItem from="1506979712894" duration="683000" />
-      <workItem from="1506980634509" duration="18000" />
-      <workItem from="1507030187345" duration="508000" />
-      <workItem from="1507062271680" duration="6938000" />
-      <workItem from="1507149221223" duration="64000" />
-      <workItem from="1507150032395" duration="224000" />
-      <workItem from="1507239059203" duration="6721000" />
-      <workItem from="1507582113001" duration="564000" />
-      <workItem from="1507582708979" duration="409000" />
-      <workItem from="1507668160897" duration="1752000" />
-      <workItem from="1507670344867" duration="325000" />
-      <workItem from="1508152562567" duration="20431000" />
-      <workItem from="1508233516370" duration="19146000" />
-      <workItem from="1508318424183" duration="4916000" />
-      <workItem from="1508418739311" duration="2235000" />
-      <workItem from="1508448600021" duration="3894000" />
-      <workItem from="1508455284574" duration="904000" />
-      <workItem from="1508498588590" duration="9635000" />
-      <workItem from="1508753071835" duration="920000" />
-      <workItem from="1508753997475" duration="30000" />
-      <workItem from="1508754051303" duration="67000" />
-      <workItem from="1508754120297" duration="11175000" />
-      <workItem from="1508875016663" duration="1512000" />
-      <workItem from="1509099782726" duration="62000" />
-      <workItem from="1509099881730" duration="13000" />
-      <workItem from="1509099901367" duration="303000" />
-      <workItem from="1509115582803" duration="1830000" />
-      <workItem from="1509192558489" duration="21335000" />
-      <workItem from="1509391226165" duration="364000" />
-      <workItem from="1509392857572" duration="9192000" />
+      <updated>1510242585749</updated>
+      <workItem from="1510242608843" duration="1147000" />
+      <workItem from="1510247196345" duration="2781000" />
+      <workItem from="1510309527034" duration="3633000" />
+      <workItem from="1510313253326" duration="8037000" />
+      <workItem from="1510565919225" duration="11157000" />
+      <workItem from="1510835403681" duration="2411000" />
+      <workItem from="1511265706923" duration="9788000" />
+      <workItem from="1511464394279" duration="11836000" />
+      <workItem from="1511787448653" duration="7441000" />
+      <workItem from="1511809158338" duration="1770000" />
+      <workItem from="1511880863628" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203015000" />
+    <option name="totallyTimeSpent" value="72959000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1848" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17194323" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22707424" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22413793" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -403,198 +362,164 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://Y:/test/basic_project_import" />
-    <entry file="file://Y:/test/test_tab.php" />
+    <entry file="file://Y:/test/gera_contagens.php" />
+    <entry file="file://Y:/test/rateio.php" />
+    <entry file="file://Y:/test/gera_relatorio.php" />
+    <entry file="file://Y:/test/relatorio.php" />
+    <entry file="file://Y:/.gitignore" />
+    <entry file="file://Y:/test/xxx.php" />
+    <entry file="file://Y:/test/conta_impressoras.php" />
+    <entry file="file://Y:/test/csv.php" />
+    <entry file="file://Y:/test/upload.php" />
+    <entry file="file://Y:/test/dashboard_simpress.php" />
+    <entry file="file://Y:/test/gera_contagens.php" />
+    <entry file="file://Y:/test/busca.php" />
+    <entry file="file://Y:/test/gera_relatorio.php" />
+    <entry file="file://Y:/test/conexao_homolog.php" />
+    <entry file="file://Y:/test/csv.php" />
+    <entry file="file://Y:/test/conexao.php" />
     <entry file="file://Y:/html/head.php" />
-    <entry file="file://Y:/html/script.php" />
-    <entry file="file://Y:/test/input_simpress.php" />
-    <entry file="file://Y:/test/dashboard.php" />
-    <entry file="file://Y:/test/login.php" />
+    <entry file="file://Y:/html/htmlEnd.php" />
+    <entry file="file://Y:/test/busca.php" />
+    <entry file="file://Y:/test/visualiza_geral.php" />
+    <entry file="file://Y:/index.html" />
+    <entry file="file://Y:/src/js/main-charts.js" />
+    <entry file="file://Y:/test/sel_relatorios.php" />
     <entry file="file://Y:/test/input_usuario.php" />
-    <entry file="file://Y:/test/basic_project_import" />
+    <entry file="file://Y:/test/rateio.php" />
     <entry file="file://Y:/test/result_busca.php" />
-    <entry file="file://Y:/test/login.php" />
+    <entry file="file://Y:/test/relatorio.php" />
+    <entry file="file://Y:/test/dashboard_simpress.php" />
+    <entry file="file://Y:/test/csv.php" />
+    <entry file="file://Y:/test/result_busca.php" />
+    <entry file="file://Y:/test/gera_contagens.php" />
+    <entry file="file://Y:/test/form_simpress_branco.php" />
+    <entry file="file://Y:/src/css/main.css" />
+    <entry file="file://Y:/html/leftSideMenu.php" />
+    <entry file="file://Y:/html/htmlStart.php" />
     <entry file="file://Y:/html/topMenu.php" />
     <entry file="file://Y:/test/upload.php" />
-    <entry file="file://Y:/test/busca.php" />
-    <entry file="file://Y:/test/sel_relatorios.php" />
-    <entry file="file://Y:/html/leftSideMenu.php" />
-    <entry file="file://Y:/test/visualiza_geral.php" />
-    <entry file="file://Y:/test/csv.php" />
-    <entry file="file://Y:/test/dashboard.php" />
-    <entry file="file://Y:/test/input_as.php" />
-    <entry file="file://Y:/test/input_assistencia.php" />
-    <entry file="file://Y:/test/input_usuario.php" />
+    <entry file="file://Y:/test/form_simpress_preenchido.php" />
+    <entry file="file://Y:/test/gera_relatorio.php" />
+    <entry file="file://Y:/test/login.php" />
     <entry file="file://Y:/test/input_simpress.php" />
     <entry file="file://Y:/test/rateio.php" />
-    <entry file="file://Y:/test/upload.php" />
-    <entry file="file://Y:/test/csv.php" />
-    <entry file="file://Y:/test/busca.php" />
     <entry file="file://Y:/test/visualiza_geral.php" />
-    <entry file="file://Y:/test/dashboard.php" />
-    <entry file="file://Y:/test/result_busca.php" />
-    <entry file="file://Y:/test/sel_relatorios.php" />
-    <entry file="file://Y:/test/conta_impressoras.php" />
-    <entry file="file://Y:/src/css/main.css" />
-    <entry file="file://Y:/src/js/main.js" />
-    <entry file="file://Y:/test/rateio.php" />
-    <entry file="file://$PROJECT_DIR$/test/upload.php">
+    <entry file="file://Y:/test/relatorio.php" />
+    <entry file="file://Y:/test/rateio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509734701031" expanded="true" signature="307:483" ph="SELECT VALOR... faturamento_simpress" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/dashboard.php" />
-    <entry file="file://$PROJECT_DIR$/test/rateio.php">
+    <entry file="file://Y:/test/csv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://Y:/test/visualiza_geral.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12325">
+          <caret line="725" column="68" lean-forward="false" selection-start-line="725" selection-start-column="68" selection-end-line="725" selection-end-column="68" />
+          <folding>
+            <marker date="1511869218890" expanded="true" signature="33637:33659" ph="..." />
+            <marker date="1511869218890" expanded="true" signature="33637:33669" ph="..." />
+            <marker date="1511869218890" expanded="true" signature="33637:33679" ph="..." />
+            <marker date="1511869218890" expanded="true" signature="33637:34012" ph="..." />
+            <marker date="1511869218890" expanded="true" signature="33637:34020" ph="..." />
+            <marker date="1511869218890" expanded="true" signature="33637:34027" ph="..." />
+            <marker date="1511869218890" expanded="true" signature="33730:34003" ph="..." />
+            <marker date="1511869218890" expanded="true" signature="34034:34067" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://Y:/test/gera_contagens.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+          <folding>
+            <marker date="1511874961531" expanded="true" signature="59:446" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="1117:1121" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="1287:10856" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="1325:10854" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="1341:1573" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="1589:3584" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="1836:3573" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="1880:2132" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="2171:2413" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="2452:2694" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="2733:2995" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="3031:3278" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="3322:3569" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="3600:4985" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="3847:4974" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="3886:4158" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="4195:4422" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="4464:4701" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="4743:4970" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="5001:6150" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="5248:6139" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="5280:5532" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="5562:5804" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="5843:6135" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="6166:6978" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="6413:6967" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="6449:6706" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="6746:6963" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="6994:7323" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="7242:7312" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="7278:7308" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="7339:10852" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="7586:10851" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="7628:8990" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="7891:8764" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="7913:8156" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="8181:8439" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="8470:8758" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="9027:9482" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="9509:10847" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="9747:10621" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="9786:10044" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="10084:10347" ph="..." />
+            <marker date="1511874961531" expanded="true" signature="10392:10615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://Y:/test/visualiza_geral_new.php" />
+    <entry file="file://Y:/test/gera_relatorio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="72" lean-forward="false" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <marker date="1508880465203" expanded="true" signature="307:483" ph="SELECT VALOR... faturamento_simpress" />
+            <marker date="1511879352375" expanded="true" signature="129:585" ph="SELECT crs .... impressoras" />
+            <marker date="1511879352375" expanded="true" signature="610:1030" ph="SELECT crs .... faturamento_simpress" />
+            <marker date="1511879352375" expanded="true" signature="1053:1097" ph="SELECT DESC_... crs" />
+            <marker date="1511879352375" expanded="true" signature="1314:1834" ph="SELECT crs.D... faturamento_simpress" />
+            <marker date="1511879352375" expanded="true" signature="1865:2436" ph="SELECT crs.D... faturamento_simpress" />
+            <marker date="1511879352375" expanded="true" signature="2779:3082" ph="SELECT SUM( faturamento_simpress" />
+            <marker date="1511879352375" expanded="true" signature="3110:3385" ph="SELECT SUM( faturamento_simpress" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/85437SP.xml">
+    <entry file="file://Y:/test/relatorio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/csv.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/result_busca.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://P:/aew.txt" />
-    <entry file="file://$PROJECT_DIR$/test/conta_impressoras.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="365">
+          <caret line="413" column="152" lean-forward="false" selection-start-line="413" selection-start-column="152" selection-end-line="413" selection-end-column="152" />
           <folding>
-            <marker date="1508793485921" expanded="true" signature="15:70" ph="SELECT COUNT... impressoras" />
+            <marker date="1511880579296" expanded="true" signature="638:726" ph="SELECT DISTI... faturamento_simpress" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/htmlStart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/dashboard_simpress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="34" lean-forward="false" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
-          <folding>
-            <marker date="1509310714453" expanded="true" signature="2233:2238" ph="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/leftSideMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/sel_relatorios.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/relatorio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <marker date="1509395020375" expanded="true" signature="218:511" ph="SELECT impre... impressoras" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/busca.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="18" />
-          <folding>
-            <marker date="1509398381000" expanded="true" signature="585:633" ph="SELECT SERIE... impressoras" />
-            <marker date="1509398381000" expanded="true" signature="1253:1319" ph="SELECT CIDAD... impressoras" />
-            <marker date="1509398381000" expanded="true" signature="1945:1999" ph="SELECT UF FR... impressoras" />
-            <marker date="1509398381000" expanded="true" signature="2563:2617" ph="SELECT CR FR... impressoras" />
-            <marker date="1509398381000" expanded="true" signature="3203:3287" ph="SELECT DESCR... impressoras" />
-            <marker date="1509398381000" expanded="true" signature="3921:4008" ph="SELECT ITEM_... impressoras" />
-            <marker date="1509398381000" expanded="true" signature="4639:4738" ph="SELECT DESC_... crs" />
-            <marker date="1509398381000" expanded="true" signature="5399:5518" ph="SELECT DESC_... crs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/visualiza_geral.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/gera_contagens.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <marker date="1509402562484" expanded="true" signature="16:505" ph="SELECT impre... impressoras" />
-            <marker date="1509402562484" expanded="true" signature="416:465" ph="SELECT MAX(C... faturamento_simpress" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="Copyright.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19286658" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19286658" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

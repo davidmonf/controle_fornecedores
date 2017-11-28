@@ -16,10 +16,10 @@ include("conexao.php")
 		<div class="row">
 			<div class="col-md-6">
 				<label for="busca_serial"
-				       class="form-control-label">Série: </label>
-				<select class="form-control"
+				       class="form-control-label ">Série: </label>
+				<select class="form-control selectpicker"
 				        id="busca_serial"
-				        name="busca_serial">
+				        name="busca_serial" data-show-subtext="true" data-live-search="true">
 					<?php
 					$sql_serie = "SELECT SERIE FROM impressoras ORDER BY SERIE ASC";
 					$result_serie = mysql_query($sql_serie, $conecta_banco) or print(mysql_error());
@@ -35,9 +35,9 @@ include("conexao.php")
 			<div class="col-md-6">
 				<label for="busca_cidade"
 				       class="form-control-label">Cidade: </label>
-				<select class="form-control"
+				<select class="form-control selectpicker"
 				        id="busca_cidade"
-				        name="busca_cidade">
+				        name="busca_cidade" data-show-subtext="true" data-live-search="true">
 					<?php
 					$sql_cidade = "SELECT CIDADE FROM impressoras GROUP BY CIDADE ORDER BY CIDADE ASC";
 					$result_cidade = mysql_query($sql_cidade, $conecta_banco) or print(mysql_error());
@@ -53,9 +53,9 @@ include("conexao.php")
 			<div class="col-md-6">
 				<label for="busca_uf"
 				       class="form-control-label">UF: </label>
-				<select class="form-control"
+				<select class="form-control selectpicker"
 				        id="busca_uf"
-				        name="busca_uf">
+				        name="busca_uf" data-show-subtext="true" data-live-search="true">
 					<?php
 					$sql_uf = "SELECT UF FROM impressoras GROUP BY UF ORDER BY UF ASC";
 					$result_uf = mysql_query($sql_uf, $conecta_banco) or print(mysql_error());
@@ -71,9 +71,9 @@ include("conexao.php")
 			<div class="col-md-6">
 				<label for="busca_cr"
 				       class="form-control-label">CR: </label>
-				<select class="form-control"
+				<select class="form-control selectpicker"
 				        id="busca_cr"
-				        name="busca_cr">
+				        name="busca_cr" data-show-subtext="true" data-live-search="true">
 					<?php
 					$sql_cr = "SELECT CR FROM impressoras GROUP BY CR ORDER BY CR ASC";
 					$result_cr = mysql_query($sql_cr, $conecta_banco) or print(mysql_error());
@@ -89,9 +89,9 @@ include("conexao.php")
 			<div class="col-md-6">
 				<label for="busca_desccr"
 				       class="form-control-label">Descrição CR: </label>
-				<select class="form-control"
+				<select class="form-control selectpicker"
 				        id="busca_desccr"
-				        name="busca_desccr">
+				        name="busca_desccr" data-show-subtext="true" data-live-search="true">
 					<?php
 					$sql_desccr = "SELECT DESCRICAO_CR FROM impressoras GROUP BY DESCRICAO_CR ORDER BY DESCRICAO_CR ASC";
 					$result_desccr = mysql_query($sql_desccr, $conecta_banco) or print(mysql_error());
@@ -107,9 +107,9 @@ include("conexao.php")
 			<div class="col-md-6">
 				<label for="busca_item"
 				       class="form-control-label">Item Contrato: </label>
-				<select class="form-control"
+				<select class="form-control selectpicker"
 				        id="busca_item"
-				        name="busca_item">
+				        name="busca_item" data-show-subtext="true" data-live-search="true">
 					<?php
 					$sql_item = "SELECT ITEM_CONTRATO FROM impressoras GROUP BY ITEM_CONTRATO ORDER BY ITEM_CONTRATO ASC";
 					$result_item = mysql_query($sql_item, $conecta_banco) or print(mysql_error());
@@ -125,9 +125,9 @@ include("conexao.php")
 			<div class="col-md-6">
 				<label for="busca_gerencia"
 				       class="form-control-label">Gerencia: </label>
-				<select class="form-control"
+				<select class="form-control selectpicker"
 				        id="busca_gerencia"
-				        name="busca_gerencia">
+				        name="busca_gerencia" data-show-subtext="true" data-live-search="true">
 					<?php
 					$sql_gerencia = "SELECT DESC_CR_GER FROM crs WHERE DESC_CR_GER != 'CR' GROUP BY DESC_CR_GER ORDER BY DESC_CR_GER ASC";
 					$result_gerencia = mysql_query($sql_gerencia, $conecta_banco) or print(mysql_error());
@@ -143,9 +143,9 @@ include("conexao.php")
 			<div class="col-md-6">
 				<label for="busca_superint"
 				       class="form-control-label">Superintendencia: </label>
-				<select class="form-control"
+				<select class="form-control selectpicker"
 				        id="busca_superint"
-				        name="busca_superint">
+				        name="busca_superint" data-show-subtext="true" data-live-search="true">
 					<?php
 					$sql_superint = "SELECT DESC_CR_SUPERINT FROM crs WHERE DESC_CR_SUPERINT != 'CR' GROUP BY DESC_CR_SUPERINT ORDER BY DESC_CR_SUPERINT ASC";
 					$result_superint = mysql_query($sql_superint, $conecta_banco) or print(mysql_error());
